@@ -5,7 +5,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
+@WebServlet(name = "helloServlet", value = "/Inicio")
 public class HelloServlet extends HttpServlet {
     private String message;
 
@@ -14,7 +14,7 @@ public class HelloServlet extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        request.getRequestDispatcher("historia.jsp").forward(request, response);
+        request.getRequestDispatcher("index.jsp").forward(request, response);
 
     }
 
@@ -23,8 +23,6 @@ public class HelloServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
-        request.getRequestDispatcher("historia.jsp").forward(request, response);
 
     }
 }

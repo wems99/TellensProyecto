@@ -31,29 +31,29 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio<span class="sr-only"></span></a>
+                <a href="Inicio" method="POST" action="Inicio" class="nav-link" href="#">Inicio<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Catálogo</a>
+                <a href="Catalogo" method="POST" action="Catalogo" class="nav-link" href="#">Catálogo</a>
             </li>
             <li class="nav-item">
-                <a method="POST" action="HelloServlet" class="nav-link" href="#">Nuestra historia</a>
+                <a href="Historia" method="POST" action="Historia" class="nav-link" href="#">Nuestra historia</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Misión y visión
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Mision</a>
-                    <a class="dropdown-item" href="#">Vision</a>
+                    <a href="MisionVision" method="POST" action="MisionVision" class="dropdown-item" href="#">Mision</a>
+                    <a href="MisionVision" method="POST" action="MisionVision" class="dropdown-item" href="#">Vision</a>
                     <div class="dropdown-divider"></div>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Visitenos</a>
+                <a href="Visitenos" method="POST" action="Visitenos"class="nav-link" href="#">Visitenos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contáctenos</a>
+                <a href="Contactenos" method="POST" action="Contactenos" class="nav-link" href="#">Contáctenos</a>
             </li>
 
 
@@ -102,40 +102,40 @@
     <div ></div>
     <div id="lineaCentro"></div>
     <div id="tarjetas">
-    <div class="tarjetas row col-13">
-        <div class="col-3">
-            <a href="/indexDetalles.html"><img class="imgs" src="img/Lo_que_el_viento_se_llev-833455217-large.jpg"></a>
-        </div>
-        <div class="col-3">
-            <a href="www.google.com"><img class="imgs" src="img/a few good men.jpg" alt=""></a>
+        <div class="tarjetas row col-13">
+            <div class="col-3">
+                <a href="/indexDetalles.html"><img class="imgs" src="img/Lo_que_el_viento_se_llev-833455217-large.jpg"></a>
+            </div>
+            <div class="col-3">
+                <a href="www.google.com"><img class="imgs" src="img/a few good men.jpg" alt=""></a>
 
-        </div>
-        <div class="col-3">
-            <a href="www.google.com"><img class="imgs" src="img/WALLSTREET.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+                <a href="www.google.com"><img class="imgs" src="img/WALLSTREET.jpg" alt=""></a>
 
-        </div>
-        <div class="col-3">
-            <a href="www.google.com"><img class="imgs"  src="img/TOP GUN.jpg" alt=" "></a>
+            </div>
+            <div class="col-3">
+                <a href="www.google.com"><img class="imgs"  src="img/TOP GUN.jpg" alt=" "></a>
 
+            </div>
         </div>
-    </div>
-    <div class="tarjetas row col-13">
-        <div class="col-3">
-            <a href="www.google.com"><img class="imgs" src="img/Breakfast club portada.jpg"></a>
-        </div>
-        <div class="col-3">
-            <a href="www.google.com"><img class="imgs" src="img/CRIMSON TIDE.jpg" alt=""></a>
+        <div class="tarjetas row col-13">
+            <div class="col-3">
+                <a href="www.google.com"><img class="imgs" src="img/Breakfast club portada.jpg"></a>
+            </div>
+            <div class="col-3">
+                <a href="www.google.com"><img class="imgs" src="img/CRIMSON TIDE.jpg" alt=""></a>
 
-        </div>
-        <div class="col-3">
-            <a href="www.google.com"><img class="imgs" src="img/cadena perpetua portada.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+                <a href="www.google.com"><img class="imgs" src="img/cadena perpetua portada.jpg" alt=""></a>
 
-        </div>
-        <div class="col-3">
-            <a href="www.google.com"><img class="imgs"  src="img/GREAT ESCAPE.jpg" alt=" "></a>
+            </div>
+            <div class="col-3">
+                <a href="www.google.com"><img class="imgs"  src="img/GREAT ESCAPE.jpg" alt=" "></a>
 
+            </div>
         </div>
-    </div>
     </div>
 </aside>
 
