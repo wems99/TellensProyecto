@@ -1,0 +1,55 @@
+.navbar-nav {
+    width: 71%;
+    color: white !important;
+    font-size: 110%;
+}
+
+.navbar {
+    background-color: black !important;
+    margin-bottom: 0% !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: gray;
+}
+
+.navbar-light .navbar-nav .nav-link::selection {
+    color: gray;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: gray;
+}
+
+.navbar-light .navbar-brand::selection {
+    color: gray;
+}
+
+.navbar-brand {
+    padding-left: 1%;
+}
+
+.btn-outline-success {
+    color: white;
+    border-color: white;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: white;
+}
+
+.fuente {
+    /*
+    font-family: 'Cantata One', serif;*/
+    font-family: 'Unna', serif;
+    color: white;
+}

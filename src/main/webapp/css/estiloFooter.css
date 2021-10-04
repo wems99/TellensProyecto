@@ -1,0 +1,43 @@
+#footer {
+    display: flex;
+    margin: 0 auto;
+    background-color: black;
+    padding-top: 1vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    font-size: 1pv;
+    border-top: 2px solid white;
+    width: 95%;
+    font-size: 18px;
+}
+
+#footer p {
+    margin-left: 5%;
+}
+
+#footer a {
+    color: white!important;
+}
+
+a {
+    color: white !important;
+}
+
+#iconos {
+    padding-left: 15%;
+    width: 30%;
+}
+
+#iconos i {
+    margin-left: 6% !important;
+}
+
+.icono {
+    color: white !important;
+    margin-left: 3%;
+}
+
+#cuadrosFooter {
+    display: flex;
+    width: 70%;
+}
