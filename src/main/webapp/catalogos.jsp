@@ -82,28 +82,33 @@
         </div>
         <div class="col-2">
             <a href="www.google.com"><img class="imgs"  src="img/TOP GUN.jpg" alt=" "></a>
-
+            <p class="fuenteCatalogo">Precio $500000</p>
         </div>
         <div class="col-2">
             <a href="www.google.com"><img class="imgs"  src="img/TOP GUN.jpg" alt=" "></a>
-
+            <p class="fuenteCatalogo">Precio $500000</p>
         </div>
     </div>
     <div class="tarjetas row col-13">
-        <div class="col-3">
+        <div class="col-2">
             <a href="www.google.com"><img class="imgs" src="img/Breakfast club portada.jpg"></a>
+            <p class="fuenteCatalogo">Precio $500000</p>
         </div>
-        <div class="col-3">
+        <div class="col-2">
             <a href="www.google.com"><img class="imgs" src="img/CRIMSON TIDE.jpg" alt=""></a>
-            <p class="fuente">Precio $500000</p>
+            <p class="fuenteCatalogo">Precio $500000</p>
         </div>
-        <div class="col-3">
+        <div class="col-2">
             <a href="www.google.com"><img class="imgs" src="img/cadena perpetua portada.jpg" alt=""></a>
-
+            <p class="fuenteCatalogo">Precio $500000</p>
         </div>
-        <div class="col-3">
+        <div class="col-2">
             <a href="www.google.com"><img class="imgs"  src="img/GREAT ESCAPE.jpg" alt=" "></a>
-
+            <p class="fuenteCatalogo">Precio $500000</p>
+        </div>
+        <div class="col-2">
+            <a href="www.google.com"><img class="imgs"  src="img/GREAT ESCAPE.jpg" alt=" "></a>
+            <p class="fuenteCatalogo">Precio $500000</p>
         </div>
     </div>
 </div>
