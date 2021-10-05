@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estiloHome.css">
+    <link rel="stylesheet" href="css/estiloCatalogo.css">
     <link rel="stylesheet" href="css/estiloNav.css">
     <link rel="stylesheet" href="css/estiloFooter.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -65,6 +65,48 @@
         </form>
     </div>
 </nav>
+
+<div id="tarjetas">
+    <div class="tarjetas row col-13">
+        <div class="col-2">
+            <a href="/indexDetalles.html"><img class="imgs" src="img/Lo_que_el_viento_se_llev-833455217-large.jpg"></a>
+            <p class="fuenteCatalogo">Precio $500000</p>
+        </div>
+        <div class="col-2">
+            <a href="www.google.com"><img class="imgs" src="img/a few good men.jpg" alt=""></a>
+            <p class="fuenteCatalogo">Precio $500000</p>
+        </div>
+        <div class="col-2">
+            <a href="www.google.com"><img class="imgs" src="img/WALLSTREET.jpg" alt=""></a>
+            <p class="fuenteCatalogo">Precio $500000</p>
+        </div>
+        <div class="col-2">
+            <a href="www.google.com"><img class="imgs"  src="img/TOP GUN.jpg" alt=" "></a>
+
+        </div>
+        <div class="col-2">
+            <a href="www.google.com"><img class="imgs"  src="img/TOP GUN.jpg" alt=" "></a>
+
+        </div>
+    </div>
+    <div class="tarjetas row col-13">
+        <div class="col-3">
+            <a href="www.google.com"><img class="imgs" src="img/Breakfast club portada.jpg"></a>
+        </div>
+        <div class="col-3">
+            <a href="www.google.com"><img class="imgs" src="img/CRIMSON TIDE.jpg" alt=""></a>
+            <p class="fuente">Precio $500000</p>
+        </div>
+        <div class="col-3">
+            <a href="www.google.com"><img class="imgs" src="img/cadena perpetua portada.jpg" alt=""></a>
+
+        </div>
+        <div class="col-3">
+            <a href="www.google.com"><img class="imgs"  src="img/GREAT ESCAPE.jpg" alt=" "></a>
+
+        </div>
+    </div>
+</div>
 <footer id="footer">
     <div id="cuadrosFooter">
         <p id="primerCuadro" class="fuente"><a href="">Preguntas frecuentes</a></p>

@@ -7,11 +7,13 @@ h1 {
     color: black !important;
 }
 
-#linea {
+.linea {
     margin: 0 auto;
     border-top: 2px solid black;
     margin-top: 2px;
     width: 90%;
+    background-color: black !important;
+    height: 0.5px;
 }
 
 .flexContainer {

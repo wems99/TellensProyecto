@@ -68,10 +68,12 @@
         </form>
     </div>
 </nav>
-<div ></div>
+<div class="linea"></div>
 <h1 class="fuente">Nuestra historia</h1>
-<div ></div>
-<div ></div>
+<div class="linea">
+    <label class="linea"></label>
+</div>
+<div class="linea"></div>
 <div id="conten" class="flexContainer fuente">
     <p>Somos una empresa que busca poder satisfacer la demanda de los clientes teniendo el catálogo más amplio de películas antiguas, con la mayor facilidad posible para comprar o alquilar sin complicaciones.
     </p>
@@ -84,8 +86,8 @@
         Nos encargamos de devolver los recuerdos a todas aquellas personas que vivieron el estreno de algunas películas en nuestro catálogo.
     </p>
 </div>
-<div></div>
-<div></div>
+<div class="linea"></div>
+<div class="linea"></div>
 
 <footer id="footer">
     <div id="cuadrosFooter">
