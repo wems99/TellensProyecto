@@ -1,23 +1,14 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: allen
-  Date: 04/10/2021
-  Time: 12:49
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
 
 <head>
-    <title>Contactenos</title>
+    <title>Solicitudes</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estiloHistoria.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +24,8 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fuente fondo">
-    <a class="navbar-brand" href="#">Tellen's Cinema</a>
+    <img id="logo" src="img/logo.png" alt="">
+    <a class="navbar-brand fuente" href="#">Tellen's Cinema</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -59,7 +51,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a href="Visitenos" method="POST" action="Visitenos"class="nav-link" href="#">Visitenos</a>
+                <a href="Visitenos" method="POST" action="Visitenos" class="nav-link" href="#">Visitenos</a>
             </li>
             <li class="nav-item">
                 <a href="Contactenos" method="POST" action="Contactenos" class="nav-link" href="#">Contáctenos</a>
@@ -67,70 +59,67 @@
 
 
         </ul>
-        <form class="form-inline my-2 ">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        <form id="busca" class="form-inline my-2 ">
+            <input id="buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <a href="" class="fas fa-search"></a>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="button">Registrarse</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="button">Ingresar</button>
+
         </form>
     </div>
 </nav>
 
-<h1 class="fuente">Contáctenos </h1>
+<h1 class="fuente">Solicitudes </h1>
 <br />
 <div class="inner contact">
-    <!-- Form Area -->
+
     <div class="contact-form">
-        <!-- Form -->
+
         <form id="contact-us" method="post" action="#">
-            <!-- Left Inputs -->
             <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
-                <!-- Name -->
                 <input type="text" name="name" id="name" required="required" class="form" placeholder="Nombre" />
-                <!-- Email -->
-                <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Correo" />
-                <!-- Subject -->
-                <input type="tel" pattern="[0-9]{3}[-][0-9]{4}" name="tel" id="tel" required="required" class="form" placeholder="888-8888" />
-                <input type="number" name="cantidad" id="cantidad" required="required" class="form" placeholder="Cantidad" />
+                <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Correo" onchange="compruebaCorreo(this.value);" />
+                <input type="tel" pattern="[0-9]{3}[-][0-9]{4}" name="tel" id="tel" required="required" class="form" placeholder="###-####" />
+                <input type="number" min="1" name="cantidad" id="cantidad" required="required" class="form" placeholder="Cantidad" />
                 <input type="text" pattern="[0-9]{2}[-][0-9]{2}[-][0-9]{2}[-][0-9]{2}" name="tarjeta" id="tarjeta" class="form" placeholder="Tarjeta de asociado" />
 
 
             </div>
-            <!-- End Left Inputs -->
-            <!-- Right Inputs -->
+
             <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
-                <!-- Message -->
-                <div id="flex">
+                <div class="flex">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheck" checked>
-                        <label class="form-check-label fuenteNegra" for="flexCheckChecked">
+                        <label class="form-check-label fuenteNegra">
                             Terror/Suspenso
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label fuenteNegra" for="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                        <label class="form-check-label fuenteNegra">
                             Comedia
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label fuenteNegra" for="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                        <label class="form-check-label fuenteNegra">
                             Acción
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label fuenteNegra" for="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                        <label class="form-check-label fuenteNegra">
                             Fantasía
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
                         <label class="form-check-label fuenteNegra" for="flexCheckDefault">
                             Románticas
                         </label>
                     </div>
                 </div>
-                <div id="flex">
+                <div class="flex">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                         <label class="form-check-label fuenteNegra" for="flexRadioDefault2"> Compra </label>
@@ -144,10 +133,7 @@
                 </div>
                 <textarea name="message" id="message" class="form textarea" placeholder="Información adicional"></textarea>
             </div>
-            <!-- End Right Inputs -->
-            <!-- Bottom Submit -->
             <div class="relative fullwidth col-xs-12">
-                <!-- Send Button -->
                 <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button>
             </div>
 
@@ -181,6 +167,6 @@
     </div>
 </footer>
 </body>
-<script src="js/funcionContactenos.js"></script>
+<script src="js/funcionSolicitudes.js "></script>
 
 </html>

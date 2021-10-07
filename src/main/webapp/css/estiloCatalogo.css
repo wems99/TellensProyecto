@@ -9,8 +9,18 @@
     display: flex;
     padding-left: 7%;
     padding-right: 3%;
-    padding-top: 3%;
 }
+
+h2 {
+    width: 10%;
+    color: white !important;
+    margin-left: 45%;
+    margin-bottom: 1%;
+    border-bottom: 2px solid white !important;
+    text-align: center;
+    font-size: 35px !important;
+}
+
 .flexContainer {
     margin: 2px 10px;
     display: flex;
@@ -18,14 +28,47 @@
     margin-left: 3%;
     width: 100%;
 }
-.imgs {
-    width: 85%;
-    height: 18em;
-    border: 2px solid black !important;
+
+body {
+    background-color: black !important;
 }
+
+.imgs {
+    width: 100%;
+    height: 16em;
+}
+
 .fuenteCatalogo {
-    font-family: 'Unna', serif;
-    color: black !important;
-    font-size: 20px;
-    margin-left: 20%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white !important;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.col-2 {
+    border: 3px solid white !important;
+    border-radius: 3%;
+    margin-right: 3%;
+}
+
+#linea {
+    width: 100%;
+    background-color: white !important;
+    color: white;
+    height: 2px;
+}
+
+.une {
+    display: flex;
+}
+
+.fa,
+.fab,
+.fal,
+.far,
+.fas {
+    margin-left: 9%;
+    color: white;
+    margin-top: 5%;
+    font-size: 17px;
 }

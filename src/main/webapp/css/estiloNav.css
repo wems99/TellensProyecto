@@ -1,7 +1,11 @@
 .navbar-nav {
-    width: 71%;
+    width: 63%;
     color: white !important;
     font-size: 110%;
+}
+
+.navbar-brand {
+    width: 10%;
 }
 
 .navbar {
@@ -40,16 +44,31 @@
 
 .btn-outline-success {
     color: white;
-    border-color: white;
 }
 
 .navbar-light .navbar-toggler {
     background-color: white;
 }
 
+#campoBuscar {
+    width: 10%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6%;
+}
+
 .fuente {
-    /*
-    font-family: 'Cantata One', serif;*/
     font-family: 'Unna', serif;
     color: white;
+}
+input,
+textarea {
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+#logo {
+    width: 10%;
+    border-radius: 5%;
 }

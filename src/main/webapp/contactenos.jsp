@@ -79,29 +79,29 @@
     <form action="#" method="post" id="contact_form">
         <div class="name">
             <label for="name"></label>
-            <input type="text" placeholder="Mi nombre es" name="name" id="name_input" required>
+            <input type="text" placeholder="Nombre" name="name" id="name_input" required>
         </div>
         <div class="email">
             <label for="email"></label>
-            <input type="email" placeholder="Mi Correo es" name="email" id="email_input" required>
+            <input type="email" placeholder="Correo" name="email" id="email_input" required>
         </div>
         <div class="telephone">
             <label for="name"></label>
-            <input type="text" placeholder="Mi numero es" name="telephone" id="telephone_input" required>
+            <input type="text" placeholder="Numero" name="telephone" id="telephone_input" required>
         </div>
         <div class="subject">
-            <label for="targeta"></label>
-            <input type="email" placeholder="Tarjeta Cliente" name="targeta" id="targeta_input" required>
+            <label for="tarjeta"></label>
+            <input type="email" placeholder="Tarjeta Cliente" name="tarjeta" id="tarjeta_input" required>
         </div>
         <div class="message">
             <label for="message"></label>
             <textarea name="message" placeholder="Informacion adicional" id="message_input" cols="30" rows="5" required></textarea>
         </div>
         <div class="submit">
-            <input type="submit" value="Send Information" id="form_button" />
+            <input type="submit" value="Enviar información" id="form_button" />
         </div>
-    </form><!-- // End form -->
-</div><!-- // End #container -->
+    </form>
+</div>
 <footer id="footer">
     <div id="cuadrosFooter">
         <p id="primerCuadro" class="fuente"><a href="">Preguntas frecuentes</a></p>
