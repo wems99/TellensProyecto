@@ -20,10 +20,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        grecaptcha.ready(() => {
+            grecaptcha.render('html_element', {
+                'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+            });
+        });
+    </script>
     <title>Tellen's Cinema</title>
 </head>
+
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light fuente fondo">
     <a class="navbar-brand" href="#">Tellen's Cinema</a>
@@ -97,6 +104,11 @@
             <label ></label>
             <textarea name="message" placeholder="Informacion adicional" id="message_input" cols="30" rows="5" required></textarea>
         </div>
+        <!--reCatpcha-->
+        <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
+        
+        </div>
+        <!--termina reCatpcha-->
         <div class="submit">
             <input type="submit" value="Enviar información" id="form_button" />
         </div>
