@@ -78,23 +78,23 @@
     </div>
     <form action="#" method="post" id="contact_form">
         <div class="name">
-            <label for="name"></label>
+            <label></label>
             <input type="text" placeholder="Nombre" name="name" id="name_input" required>
         </div>
         <div class="email">
-            <label for="email"></label>
+            <label></label>
             <input type="email" placeholder="Correo" name="email" id="email_input" required>
         </div>
         <div class="telephone">
-            <label for="name"></label>
+            <label></label>
             <input type="text" placeholder="Numero" name="telephone" id="telephone_input" required>
         </div>
         <div class="subject">
-            <label for="tarjeta"></label>
+            <label ></label>
             <input type="email" placeholder="Tarjeta Cliente" name="tarjeta" id="tarjeta_input" required>
         </div>
         <div class="message">
-            <label for="message"></label>
+            <label ></label>
             <textarea name="message" placeholder="Informacion adicional" id="message_input" cols="30" rows="5" required></textarea>
         </div>
         <div class="submit">
