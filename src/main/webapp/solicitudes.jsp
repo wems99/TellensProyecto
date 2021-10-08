@@ -89,31 +89,31 @@
             <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
                 <div class="flex">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck" checked>
+                        <input class="form-check-input" type="checkbox" value="Terror/Suspenso" id="flexCheck" checked>
                         <label class="form-check-label fuenteNegra">
                             Terror/Suspenso
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                        <input class="form-check-input" type="checkbox" value="Comedia" id="flexCheckDefault1">
                         <label class="form-check-label fuenteNegra">
                             Comedia
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                        <input class="form-check-input" type="checkbox" value="Accion" id="flexCheckDefault">
                         <label class="form-check-label fuenteNegra">
                             Acción
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                        <input class="form-check-input" type="checkbox" value="Fantasía" id="flexCheckDefault">
                         <label class="form-check-label fuenteNegra">
                             Fantasía
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                        <input class="form-check-input" type="checkbox" value="Romanticas" id="flexCheckDefault4">
                         <label class="form-check-label fuenteNegra" for="flexCheckDefault">
                             Románticas
                         </label>
@@ -121,12 +121,12 @@
                 </div>
                 <div class="flex">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label fuenteNegra" for="flexRadioDefault2"> Compra </label>
+                        <input class="form-check-input" type="radio" value="Comprea" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label fuenteNegra" for="flexRadioDefault1"> Compra </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label fuenteNegra" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" value="Alquiler" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label fuenteNegra" for="flexRadioDefault2">
                             Alquiler
                         </label>
                     </div>
@@ -134,7 +134,7 @@
                 <textarea name="message" id="message" class="form textarea" placeholder="Información adicional"></textarea>
             </div>
             <div class="relative fullwidth col-xs-12">
-                <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button>
+                <button type="submit" id="submit" name="submit" class="form-btn semibold" method="POST" action="Solicitudes">Enviar informacion</button>
             </div>
 
             <div class="clear"></div>
