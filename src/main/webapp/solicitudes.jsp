@@ -45,8 +45,8 @@
                     Misión y visión
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a href="MisionVision" method="POST" action="MisionVision" class="dropdown-item" href="#">Mision</a>
-                    <a href="MisionVision" method="POST" action="MisionVision" class="dropdown-item" href="#">Vision</a>
+                    <a href="Mision" method="POST" action="Mision" class="dropdown-item" href="#">Mision</a>
+                    <a href="Vision" method="POST" action="Vision" class="dropdown-item" href="#">Vision</a>
                     <div class="dropdown-divider"></div>
                 </div>
             </li>
@@ -79,7 +79,7 @@
             <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
                 <input type="text" name="name" id="name" required="required" class="form" placeholder="Nombre" />
                 <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Correo" onchange="compruebaCorreo(this.value);" />
-                <input type="tel" pattern="[0-9]{3}[-][0-9]{4}" name="tel" id="tel" required="required" class="form" placeholder="###-####" />
+                <input type="tel" pattern="[0-9]{8}" name="tel" id="tel" required="required" class="form" placeholder="########" />
                 <input type="number" min="1" name="cantidad" id="cantidad" required="required" class="form" placeholder="Cantidad" />
                 <input type="text" pattern="[0-9]{2}[-][0-9]{2}[-][0-9]{2}[-][0-9]{2}" name="tarjeta" id="tarjeta" class="form" placeholder="Tarjeta de asociado" />
 
@@ -168,5 +168,6 @@
 </footer>
 </body>
 <script src="js/funcionSolicitudes.js "></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </html>

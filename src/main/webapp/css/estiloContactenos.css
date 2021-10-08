@@ -39,7 +39,7 @@ textarea {
     position: relative;
 }
 
-form {
+#contact_form{
     padding: 37.5px;
     margin: 50px 0;
 }

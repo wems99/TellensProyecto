@@ -51,8 +51,8 @@
                     Misión y visión
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a href="MisionVision" method="POST" action="MisionVision" class="dropdown-item" href="#">Mision</a>
-                    <a href="MisionVision" method="POST" action="MisionVision" class="dropdown-item" href="#">Vision</a>
+                    <a href="Mision" method="POST" action="Mision" class="dropdown-item" href="#">Mision</a>
+                    <a href="Vision" method="POST" action="Vision" class="dropdown-item" href="#">Vision</a>
                     <div class="dropdown-divider"></div>
                 </div>
             </li>
@@ -153,4 +153,6 @@
 <!--footer termina-->
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </html>

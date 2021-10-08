@@ -28,7 +28,8 @@
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light fuente fondo">
-    <a class="navbar-brand" href="#">Tellen's Cinema</a>
+    <img id="logo" src="img/logo.png" alt="">
+    <a class="navbar-brand fuente" href="#">Tellen's Cinema</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -48,13 +49,13 @@
                     Misión y visión
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a href="MisionVision" method="POST" action="MisionVision" class="dropdown-item" href="#">Mision</a>
-                    <a href="MisionVision" method="POST" action="MisionVision" class="dropdown-item" href="#">Vision</a>
+                    <a href="Mision" method="POST" action="Mision" class="dropdown-item" href="#">Mision</a>
+                    <a href="Vision" method="POST" action="Vision" class="dropdown-item" href="#">Vision</a>
                     <div class="dropdown-divider"></div>
                 </div>
             </li>
             <li class="nav-item">
-                <a href="Visitenos" method="POST" action="Visitenos"class="nav-link" href="#">Visitenos</a>
+                <a href="Visitenos" method="POST" action="Visitenos" class="nav-link" href="#">Visitenos</a>
             </li>
             <li class="nav-item">
                 <a href="Contactenos" method="POST" action="Contactenos" class="nav-link" href="#">Contáctenos</a>
@@ -62,9 +63,12 @@
 
 
         </ul>
-        <form class="form-inline my-2 ">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        <form id="busca" class="form-inline my-2 ">
+            <input id="buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <a href="" class="fas fa-search"></a>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="button">Registrarse</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="button">Ingresar</button>
+
         </form>
     </div>
 </nav>
@@ -104,5 +108,6 @@
     </div>
 </footer>
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </html>

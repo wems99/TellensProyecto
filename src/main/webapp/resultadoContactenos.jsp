@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: teres
-  Date: 7/10/2021
-  Time: 08:11 p. m.
+  Date: 8/10/2021
+  Time: 12:45 p. m.
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -81,52 +81,35 @@
     <div>
         <h2 class="fuente ">Nombre </h2>
         <h3 class="fuente">
-            <%= request.getAttribute("name") %>
+            <%= request.getAttribute("name_input") %>
         </h3>
     </div>
     <div>
         <h2 class="fuente ">Correo </h2>
         <h3 class="fuente">
-            <%= request.getAttribute("mail") %>
+            <%= request.getAttribute("email_input") %>
         </h3>
     </div>
 
     <div>
         <h2 class="fuente ">Telefono </h2>
         <h3 class="fuente">
-            <%= request.getAttribute("tel") %>
-        </h3>
-    </div>
-    <div>
-        <h2 class="fuente ">Cantidad </h2>
-        <h3 class="fuente">
-            <%= request.getAttribute("cantidad") %>
+            <%= request.getAttribute("telephone_input") %>
         </h3>
     </div>
     <div>
         <h2 class="fuente ">Tarjeta </h2>
         <h3 class="fuente">
-            <%= request.getAttribute("tarjeta") %>
+            <%= request.getAttribute("tarjeta_input") %>
         </h3>
     </div>
     <div>
         <h2 class="fuente ">Mensaje </h2>
         <h3 class="fuente">
-            <%= request.getAttribute("message") %>
+            <%= request.getAttribute("message_input") %>
         </h3>
     </div>
-    <div>
-        <h2 class="fuente ">Genero </h2>
-        <h3 class="fuente">
-            <%= request.getAttribute("flexCheckDefault") %>
-        </h3>
-    </div>
-    <div>
-        <h2 class="fuente ">Tipo </h2>
-        <h3 class="fuente">
-            <%= request.getAttribute("flexCheckDefault") %>
-        </h3>
-    </div>
+
 
 </div>
 <footer id="footer">

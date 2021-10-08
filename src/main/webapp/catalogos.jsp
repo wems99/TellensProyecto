@@ -20,6 +20,7 @@
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light fuente fondo">
+    <img id="logo" src="img/logo.png" alt="">
     <a class="navbar-brand" href="#">Tellen's Cinema</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,8 +41,8 @@
                     Misión y visión
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a href="MisionVision" method="POST" action="MisionVision" class="dropdown-item" href="#">Mision</a>
-                    <a href="MisionVision" method="POST" action="MisionVision" class="dropdown-item" href="#">Vision</a>
+                    <a href="Mision" method="POST" action="Mision" class="dropdown-item" href="#">Mision</a>
+                    <a href="Vision" method="POST" action="Vision" class="dropdown-item" href="#">Vision</a>
                     <div class="dropdown-divider"></div>
                 </div>
             </li>
@@ -292,5 +293,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-2.0.3.js"></script>
 <script src="js/funcionCatalogo.js "></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </html>

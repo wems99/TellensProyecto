@@ -72,3 +72,6 @@ body {
     margin-top: 5%;
     font-size: 17px;
 }
+form{
+    padding: 0 !important;
+}
