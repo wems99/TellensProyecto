@@ -61,41 +61,43 @@
 
 <p id="linea"></p>
 <h2 class="fuente">Populares</h2>
-<div>
+<div id="divPopulares">
     <div class="tarjetas ">
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/masCannibal.jpg"></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" >Precio $45000</p>
+                <input type="hidden" id="precioPopu1" class="precios" value="450000" >
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/lomas3KAJpE2OOimXE5Z15LHARbeA0eC.jpg"></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
-                <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
+                <p class="fuenteCatalogo une" >Precio $300000</p>
+                <input type="hidden" id="precioPopu2" class="precios" value="300000" >
+                <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href="" onclick="precio();"> </a>
             </div>
 
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/lomas71Wlzxbp9FL._SL1500_.jpg" alt=""></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioPopu3">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/lomasMV5BYzUzYjA3OGItODcwNi00NTNhLWJmNzctMjU0MDY4NDhjY2NhXkEyXkFqcGdeQXVyNTE3NDExNDY@._V1_FMjpg_UX1000_.jpg" alt=" "></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioPopu4">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/lomasp5173_p_v13_ad.jpg" alt=" "></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioPopu5">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
@@ -108,14 +110,14 @@
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/ActionFuga_de_Alcatraz-894311174-large.jpg"></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioAccion1">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/ActionFurorDragon.jpg" alt=""></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioAccion2">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
 
@@ -123,21 +125,21 @@
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/ActionStar_Wars_La_Guerra_de_las_Galaxias_poster.jpg" alt=""></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
-            <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
+                <p class="fuenteCatalogo une" id="precioAccion3">Precio $500000</p>
+                <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/ActionSuperman.jpg" alt=" "></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioAccion4">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/ActionVive_y_deja_morir-978898874-large.jpg" alt=" "></a>
             <div class="une">
-                <p class="fuenteCatalogo une" >Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioAccion5">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
@@ -145,19 +147,19 @@
 </div>
 
 <h2 class="fuente">Comedia</h2>
-<div>
+<div id="divComedia">
     <div class="tarjetas ">
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/ComediaAmericanGrafiti19872017.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg"></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioComedia1">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/ComediaBandaLoro.jpg"></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioComedia2">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
 
@@ -165,21 +167,21 @@
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/ComediaBeetlejuice_el_super_fantasma-121077102-large.jpg" alt=""></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioComedia3">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/ComediaSociosYSabuesos.jpg" alt=" "></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioComedia4">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/ComediaVolver_al_Futuro_II_Poster.jpg" alt=" "></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioComedia5">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
@@ -192,14 +194,14 @@
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/TerrorAlien.jpg"></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioTerror1">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/TerrorBlackChristmas.png" alt=""></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioTerror2">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
 
@@ -207,21 +209,21 @@
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/TerrorElEngendro.jpg" alt=""></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioTerror3">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/TerrorTexasChainsaw.jpg" alt=" "></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioTerror4">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/TerrorTheVelvetVampire.jpg" alt=" "></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioTerror5">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
@@ -234,14 +236,14 @@
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/romanti81fk0NKi84L._SL1500_.jpg"></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioRomantica1">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/romantiA1hx78Yei8L._SY679_.jpg" alt=""></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioRomantica2">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
 
@@ -249,21 +251,21 @@
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/romantidda84f5b-a233-477d-a732-4148db56a85a_x365.jpg" alt=""></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioRomantica3">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/romantiposter_originalsize_250X375.jpg" alt=" "></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioRomantica4">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
         <div class="col-2">
             <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/romanti91uS74wouML._SY550_.jpg" alt=" "></a>
             <div class="une">
-                <p class="fuenteCatalogo une">Precio $500000</p>
+                <p class="fuenteCatalogo une" id="precioRomantica5">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>
             </div>
         </div>
@@ -288,5 +290,7 @@
     </div>
 </footer>
 </body>
+<script src="https://code.jquery.com/jquery-2.0.3.js"></script>
+<script src="js/funcionCatalogo.js "></script>
 
 </html>

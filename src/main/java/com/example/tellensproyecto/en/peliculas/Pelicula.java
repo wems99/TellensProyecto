@@ -2,7 +2,7 @@ package com.example.tellensproyecto.en.peliculas;
 
 public class Pelicula {
     String Name;
-    double precio;
+    String precio;
     String tipo;
 
     public Pelicula() {
@@ -16,11 +16,11 @@ public class Pelicula {
         Name = name;
     }
 
-    public double getPrecio() {
+    public String getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(String precio) {
         this.precio = precio;
     }
 
