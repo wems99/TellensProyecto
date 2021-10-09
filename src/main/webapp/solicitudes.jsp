@@ -19,6 +19,14 @@
     <link rel="stylesheet" href="css/estiloSolicitudes.css">
     <link rel="stylesheet" href="css/estiloFooter.css">
     <link rel="stylesheet" href="css/estiloNav.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        grecaptcha.ready(() => {
+            grecaptcha.render('html_element', {
+                'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -133,6 +141,11 @@
                 </div>
                 <textarea name="message" id="message" class="form textarea" placeholder="Información adicional"></textarea>
             </div>
+            <!--reCatpcha-->
+            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
+    
+            </div>
+            <!--termina reCatpcha-->
             <div class="relative fullwidth col-xs-12">
                 <button type="submit" id="submit" name="submit" class="form-btn semibold" method="POST" action="Solicitudes">Enviar informacion</button>
             </div>
