@@ -140,16 +140,15 @@
                     </div>
                 </div>
                 <textarea name="message" id="message" class="form textarea" placeholder="Información adicional"></textarea>
+                <!--reCatpcha-->
+                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                <!--termina reCatpcha-->
             </div>
-            <!--reCatpcha-->
-            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
-    
-            </div>
-            <!--termina reCatpcha-->
+            
             <div class="relative fullwidth col-xs-12">
                 <button type="submit" id="submit" name="submit" class="form-btn semibold" method="POST" action="Solicitudes">Enviar informacion</button>
             </div>
-
+            
             <div class="clear"></div>
         </form>
 
