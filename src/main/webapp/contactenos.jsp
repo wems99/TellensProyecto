@@ -65,16 +65,14 @@
             <li class="nav-item">
                 <a href="Contactenos" method="POST" action="Contactenos" class="nav-link" href="#">Contáctenos</a>
             </li>
-
-
         </ul>
         <form id="busca" class="form-inline my-2 ">
             <input id="buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
             <a href="" class="fas fa-search"></a>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Registrarse</button>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Ingresar</button>
-
         </form>
+        
     </div>
 </nav>
 <div id="container">
@@ -112,9 +110,9 @@
         <div class="captcha">
             <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="enabledSubmit"></div>
         </div>
+        
         <!--reCatpcha
         <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
-        
         </div>
         termina reCatpcha-->
     
