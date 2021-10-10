@@ -92,13 +92,12 @@
 
 
 <div class="inner contact">
-    <div class="precio-container">
-        <label>Precio:</label>
-        <input  id="precio_input" readonly="readonly" value="<%= request.getAttribute("precio")%>">
-    </div>
+
    
     <div class="contact-form">
 
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        </div>
         <form id="contact-us" method="post" action="#" onsubmit="return miFuncion(this)">
             <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
                 <input type="text" name="name" id="name" required="required" class="form" placeholder="Nombre" />
@@ -156,7 +155,10 @@
                     </div>
                 </div>
                 <textarea name="message" id="message" class="form textarea" placeholder="Información adicional"></textarea>
-               
+                <div class="precio-container">
+                    <label class="fuenteNegra">Precio de la pelicula seleccionada:</label>
+                    <input  id="precio_input" readonly="readonly" value="$ <%= request.getAttribute("precio")%>">
+                </div>
                 <div class="captcha">
                     <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="enabledSubmit"></div>
                 </div>
