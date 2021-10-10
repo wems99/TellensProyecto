@@ -1,9 +1,10 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
 
 <head>
     <title>Solicitudes</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -88,9 +89,11 @@
 </nav>
 
 <h1 class="fuente">Solicitudes </h1>
-<br />
-<div class="inner contact">
 
+
+<div class="inner contact">
+    <input  id="precio_input" readonly="readonly">
+    <input  id="nombre_input" readonly="readonly">
     <div class="contact-form">
 
         <form id="contact-us" method="post" action="#" onsubmit="return miFuncion(this)">

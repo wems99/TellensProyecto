@@ -173,7 +173,7 @@
             </div>
         </div>
         <div class="col-2">
-            <a href="Solicitudes" method="POST" action="Solicitudes"><img class="imgs" src="img/ComediaSociosYSabuesos.jpg" alt=" "></a>
+            <a href="Solicitudes?precio=50000" ><img class="imgs" src="img/ComediaSociosYSabuesos.jpg" alt=" "></a>
             <div class="une">
                 <p class="fuenteCatalogo une" id="precioComedia4">Precio $500000</p>
                 <a href="Solicitudes" method="POST" action="Solicitudes" class="fas fa-shopping-cart" href=""> </a>

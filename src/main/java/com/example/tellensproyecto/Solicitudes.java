@@ -11,7 +11,11 @@ import java.io.IOException;
 public class Solicitudes extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+       String precio;
+        precio = request.getParameter("precio");
+        request.setAttribute("precio",precio);
         request.getRequestDispatcher("solicitudes.jsp").forward(request, response);
+
     }
 
     @Override
