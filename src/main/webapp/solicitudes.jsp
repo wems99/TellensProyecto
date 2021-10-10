@@ -92,9 +92,11 @@
 
 
 <div class="inner contact">
-    
-    <input  id="precio_input" readonly="readonly" value="<%= request.getAttribute("precio")%>">
-    <input  id="nombre_input" readonly="readonly">
+    <div class="precio-container">
+        <label>Precio:</label>
+        <input  id="precio_input" readonly="readonly" value="<%= request.getAttribute("precio")%>">
+    </div>
+   
     <div class="contact-form">
 
         <form id="contact-us" method="post" action="#" onsubmit="return miFuncion(this)">
@@ -104,7 +106,7 @@
                 <input type="tel" pattern="[0-9]{8}" name="tel" id="tel" required="required" class="form" placeholder="########" />
                 <input type="number" min="1" name="cantidad" id="cantidad" required="required" class="form" placeholder="Cantidad" />
                 <input type="text" pattern="[0-9]{2}[-][0-9]{2}[-][0-9]{2}[-][0-9]{2}" name="tarjeta" id="tarjeta" class="form" placeholder="Tarjeta de asociado" />
-
+                <input type="hidden" readonly="readonly" name="total"/>
 
             </div>
 

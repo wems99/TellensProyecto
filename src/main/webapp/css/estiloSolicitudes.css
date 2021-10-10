@@ -71,6 +71,11 @@
     opacity: 0;
 }
 
+.precio-container{
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
 /* Generic Button Styles */
 
 .button {

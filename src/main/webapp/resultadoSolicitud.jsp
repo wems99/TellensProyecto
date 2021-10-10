@@ -115,6 +115,12 @@
             <%= request.getAttribute("message") %>
         </h3>
     </div>
+    <div>
+        <h2 class="fuente ">Precio Total</h2>
+        <h3 class="fuente">
+            <%= request.getAttribute("total") %>
+        </h3>
+    </div>
 
 
 </div>
