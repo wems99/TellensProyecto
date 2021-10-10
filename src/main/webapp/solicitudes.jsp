@@ -19,6 +19,16 @@
     <link rel="stylesheet" href="css/estiloSolicitudes.css">
     <link rel="stylesheet" href="css/estiloFooter.css">
     <link rel="stylesheet" href="css/estiloNav.css">
+    <script>function miFuncion() {
+        var response = grecaptcha.getResponse();
+
+        if(response.length == 0){
+            alert("Captcha no verificado")
+        } else {
+            alert("Captcha verificado");
+        }
+    }
+    </script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
         grecaptcha.ready(() => {
@@ -83,7 +93,7 @@
 
     <div class="contact-form">
 
-        <form id="contact-us" method="post" action="#">
+        <form id="contact-us" method="post" action="#" onsubmit="return miFuncion(this)">
             <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
                 <input type="text" name="name" id="name" required="required" class="form" placeholder="Nombre" />
                 <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Correo" onchange="compruebaCorreo(this.value);" />
@@ -140,9 +150,30 @@
                     </div>
                 </div>
                 <textarea name="message" id="message" class="form textarea" placeholder="Información adicional"></textarea>
-                <!--reCatpcha-->
+               
+                <div class="captcha">
+                    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="enabledSubmit"></div>
+                </div>
+                <!--reCatpcha
                 <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
-                <!--termina reCatpcha-->
+                termina reCatpcha-->
+                
+                <script>
+                    function miFuncion(a) {
+                        var response = grecaptcha.getResponse();
+
+                        if(response.length == 0){
+                            alert("Captcha no verificado");
+                            return false;
+                            event.preventDefault();
+                        } else {
+                            return true;
+                        }
+                    }
+                </script>
+    
+               
+                
             </div>
             
             <div class="relative fullwidth col-xs-12">

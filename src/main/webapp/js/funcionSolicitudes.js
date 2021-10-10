@@ -12,3 +12,10 @@ function descuentoTarjeta() {
         return 0.15;
     }
 }
+
+//funcion captcha
+
+
+function enabledSubmit(response) {
+    document.getElemenstByName('submit')[0].disabled = false;
+}
