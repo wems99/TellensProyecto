@@ -1,3 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: teres
+  Date: 9/10/2021
+  Time: 06:41 p. m.
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +22,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/estiloDetalleJSP.css">
+    
     <title>Tellen's Cinema</title>
 </head>
 
@@ -54,114 +62,65 @@
             <li class="nav-item">
                 <a href="Contactenos" method="POST" action="Contactenos" class="nav-link" href="#">Contáctenos</a>
             </li>
-
-
+        
+        
         </ul>
         <form id="busca" class="form-inline my-2 ">
             <input id="buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
             <a href="" class="fas fa-search"></a>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Registrarse</button>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Ingresar</button>
-
+        
         </form>
     </div>
 </nav>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
 
-    <div class="carousel-inner">
+<!--contenido detalles-->
 
-        <div class="item">
-            <img class="imgs" src="img/godfather banner.jpg" alt="Chicago" style="width:100%;">
+<div id="linea"></div>
+<h1 class="fuente">Lo que el viento se llevó</h1>
+<div id="linea"></div>
+<div id="detalles" class="flexContainer">
+    <div class="principal">
+        <h2 class="fuente">Sipnosis</h2>
+        <p id="sipnosis" class="fuente">Scarlett O’Hara vive en Tara, una gran plantación del estado sureño de Georgia, y está enamorada de Ashley Wilkes, que en breve contraerá matrimonio con Melanie Hamilton. Estamos en 1861, en los prolegómenos de la guerra de Secesión, y todos
+            los jóvenes sureños muestran entusiasmo por entrar en combate, excepto el atractivo aventurero Rhett Butler. A Butler le gusta Scarlett, pero ésta sigue enamorada de Ashley, que acaba de hacer público su compromiso con Melanie. Despechada,
+            Scarlett acepta la propuesta de matrimonio de Charles, el hermano de Melanie, al que desprecia. Años más tarde, y como consecuencia del final de la guerra, ya viuda, Scarlett debe afrontar situaciones nuevas como el hambre, el dolor y
+            la pérdida e instalarse en Atlanta, donde Melanie espera noticias de Ashley y Butler aparece de nuevo...</p>
+    
+    </div>
+    <div id="reparto" class="secundario">
+        
+        <h2 class="fuente"><b>Direccion y Reparto</b> </h2>
+        <div class="flexContainer">
+            <h3 class="fuente">Dirección:</h3>
+            <p class="fuente nombres">Victor Fleming </p>
         </div>
-        <div class="item active">
-            <img class="imgs" src="img/Grease-1978-1-1200x675.jpg" alt="Los Angeles" style="width:100%;">
-        </div>
-
-        <div class="item">
-            <img class="imgs" src="img/goodfellas banner.jpg" alt="New york" style="width:100%;">
+        <div class="flexContainer">
+            <h3 class="fuente">Reparto:</h3>
+            <p class="fuente nombres">Thomas Mitchell. Barbara O'Neil. Vivien Leigh. Evelyn Keyes. Ann Rutherford.</p>
         </div>
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-    </a>
 </div>
-<aside method="POST" action="Home" id="sctPelis">
-    <div></div>
-    <div ></div>
-    <h2 class="fuente">Lo más buscado</h2>
-    <div ></div>
-    <div id="lineaCentro"></div>
-    <div id="tarjetas">
-        <div class="tarjetas row col-13">
-            <div class="col-3">
-                <a href="detalles.jsp"><img class="imgs" src="img/Lo_que_el_viento_se_llev-833455217-large.jpg"></a>
-            </div>
-            <div class="col-3">
-                <a href="detalleAFewGoodMan.jsp"><img class="imgs" src="img/a few good men.jpg" alt=""></a>
-
-            </div>
-            <div class="col-3">
-                <a href="detalleWallStreet.jsp"><img class="imgs" src="img/WALLSTREET.jpg" alt=""></a>
-
-            </div>
-            <div class="col-3">
-                <a href="detalleTopGun.jsp"><img class="imgs"  src="img/TOP GUN.jpg" alt=" "></a>
-
-            </div>
+<div id="detalles" class="flexContainer">
+    <div class="principal">
+        <h2 class="fuente">Premios y nominaciones</h2>
+        <p class="fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt inventore, blanditiis distinctio ullam quas voluptatem pariatur laboriosam debitis, odio rerum dignissimos quaerat veniam asperiores sint voluptas modi accusantium facilis nostrum.</p>
+    </div>
+    <div id="premio" class="secundario">
+        <h2 class="fuente">Audios y subtitulos</h2>
+        <div class="flexContainer">
+            <h3 class="fuente">Idiomas:</h3>
+            <p class="fuente nombres">Ingles, español.</p>
         </div>
-        <div class="tarjetas row col-13">
-            <div class="col-3">
-                <a href="destalleTheBreakFastClub.jsp"><img class="imgs" src="img/Breakfast club portada.jpg"></a>
-            </div>
-            <div class="col-3">
-                <a href="detalleCrimsonTide.jsp"><img class="imgs" src="img/CRIMSON TIDE.jpg" alt=""></a>
-
-            </div>
-            <div class="col-3">
-                <a href="detalleCadenaPerpetua.jsp"><img class="imgs" src="img/cadena perpetua portada.jpg" alt=""></a>
-
-            </div>
-            <div class="col-3">
-                <a href="detalleGreatScape.jsp"><img class="imgs"  src="img/GREAT ESCAPE.jpg" alt=" "></a>
-
-            </div>
+        <div class="flexContainer">
+            <h3 class="fuente">Subtitulos:</h3>
+            <p class="fuente nombres">Español, ingles.</p>
         </div>
-    </div>
-</aside>
-
-<div id="contVideo">
-    <div class="distancia">
-        <video width="100%" height="240" controls>
-            <source src="video/y2mate.com - Gone With The Wind  75th Anniversary Trailer  Warner Bros Entertainment_480p.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="distancia">
-        <video width="100%" height="240" controls>
-            <source src="video/GREASE _ Trailer _ Paramount Movies.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="distancia">
-        <video width="100%" height="240" controls>
-            <source src="video/y2mate.com - The Breakfast Club Official Trailer 1  Paul Gleason Movie 1985 HD_360p.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
     </div>
 </div>
 
+<!--termina el contenido-->
 
 <footer id="footer">
     <div id="cuadrosFooter">
@@ -182,9 +141,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js " integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN " crossorigin="anonymous "></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js " integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/ " crossorigin="anonymous "></script>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="js/funtion.js "></script>
-
-</html>

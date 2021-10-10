@@ -92,7 +92,8 @@
 
 
 <div class="inner contact">
-    <input  id="precio_input" readonly="readonly">
+    
+    <input  id="precio_input" readonly="readonly" value="<%= request.getAttribute("precio")%>">
     <input  id="nombre_input" readonly="readonly">
     <div class="contact-form">
 

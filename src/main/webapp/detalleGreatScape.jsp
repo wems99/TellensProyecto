@@ -1,7 +1,12 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html lang="en">
-
+<%--
+  Created by IntelliJ IDEA.
+  User: allen
+  Date: 09/10/2021
+  Time: 21:45
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,11 +20,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/estiloDetalleJSP.css">
     <title>Tellen's Cinema</title>
 </head>
-
 <body>
+
+<!--nav bar-->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fuente fondo">
     <img id="logo" src="img/logo.png" alt="">
@@ -54,115 +60,63 @@
             <li class="nav-item">
                 <a href="Contactenos" method="POST" action="Contactenos" class="nav-link" href="#">Contáctenos</a>
             </li>
-
-
+        
+        
         </ul>
         <form id="busca" class="form-inline my-2 ">
             <input id="buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
             <a href="" class="fas fa-search"></a>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Registrarse</button>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Ingresar</button>
-
+        
         </form>
     </div>
 </nav>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
 
-    <div class="carousel-inner">
+<!--cotent movie-->
 
-        <div class="item">
-            <img class="imgs" src="img/godfather banner.jpg" alt="Chicago" style="width:100%;">
-        </div>
-        <div class="item active">
-            <img class="imgs" src="img/Grease-1978-1-1200x675.jpg" alt="Los Angeles" style="width:100%;">
-        </div>
-
-        <div class="item">
-            <img class="imgs" src="img/goodfellas banner.jpg" alt="New york" style="width:100%;">
-        </div>
+<div id="linea"></div>
+<h1 class="fuente">The Great Escape</h1>
+<div id="linea"></div>
+<div id="detalles" class="flexContainer">
+    <div class="principal">
+        <h2 class="fuente">Sipnosis</h2>
+        <p id="sipnosis" class="fuente">Los alemanes, cansados de los intentos de fugas de los aviadores británicos y estadounidenses,
+            deciden agrupar a los más peligrosos en un solo lugar: Stalag Luft III, un campo de prisioneros de guerra de máxima seguridad,
+            con guardianes expertos y del que su comandante, el coronel von Luger (Hannes Messemer), dice que es imposible fugarse....</p>
+    
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-<aside method="POST" action="Home" id="sctPelis">
-    <div></div>
-    <div ></div>
-    <h2 class="fuente">Lo más buscado</h2>
-    <div ></div>
-    <div id="lineaCentro"></div>
-    <div id="tarjetas">
-        <div class="tarjetas row col-13">
-            <div class="col-3">
-                <a href="detalles.jsp"><img class="imgs" src="img/Lo_que_el_viento_se_llev-833455217-large.jpg"></a>
-            </div>
-            <div class="col-3">
-                <a href="detalleAFewGoodMan.jsp"><img class="imgs" src="img/a few good men.jpg" alt=""></a>
-
-            </div>
-            <div class="col-3">
-                <a href="detalleWallStreet.jsp"><img class="imgs" src="img/WALLSTREET.jpg" alt=""></a>
-
-            </div>
-            <div class="col-3">
-                <a href="detalleTopGun.jsp"><img class="imgs"  src="img/TOP GUN.jpg" alt=" "></a>
-
-            </div>
+    <div id="reparto" class="secundario">
+        
+        <h2 class="fuente"><b>Direccion y Reparto</b> </h2>
+        <div class="flexContainer">
+            <h3 class="fuente">Dirección:</h3>
+            <p class="fuente nombres"> John Sturges </p>
         </div>
-        <div class="tarjetas row col-13">
-            <div class="col-3">
-                <a href="destalleTheBreakFastClub.jsp"><img class="imgs" src="img/Breakfast club portada.jpg"></a>
-            </div>
-            <div class="col-3">
-                <a href="detalleCrimsonTide.jsp"><img class="imgs" src="img/CRIMSON TIDE.jpg" alt=""></a>
-
-            </div>
-            <div class="col-3">
-                <a href="detalleCadenaPerpetua.jsp"><img class="imgs" src="img/cadena perpetua portada.jpg" alt=""></a>
-
-            </div>
-            <div class="col-3">
-                <a href="detalleGreatScape.jsp"><img class="imgs"  src="img/GREAT ESCAPE.jpg" alt=" "></a>
-
-            </div>
+        <div class="flexContainer">
+            <h3 class="fuente">Reparto:</h3>
+            <p class="fuente nombres">	Steve McQueen. James Garner. Richard Attenborough. James Donald. Charles Bronson.</p>
         </div>
-    </div>
-</aside>
-
-<div id="contVideo">
-    <div class="distancia">
-        <video width="100%" height="240" controls>
-            <source src="video/y2mate.com - Gone With The Wind  75th Anniversary Trailer  Warner Bros Entertainment_480p.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="distancia">
-        <video width="100%" height="240" controls>
-            <source src="video/GREASE _ Trailer _ Paramount Movies.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="distancia">
-        <video width="100%" height="240" controls>
-            <source src="video/y2mate.com - The Breakfast Club Official Trailer 1  Paul Gleason Movie 1985 HD_360p.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
     </div>
 </div>
-
-
+<div id="detalles" class="flexContainer">
+    <div class="principal">
+        <h2 class="fuente">Premios y nominaciones</h2>
+        <p class="fuente">Premio Oscar Mejor Montaje, Premio Globo de Oro A la Mejor Pelicula Dramatica, Premio WGA al Drama Estadounidense Mejor Escrito</p>
+    </div>
+    <div id="premio" class="secundario">
+        <h2 class="fuente">Audios y subtitulos</h2>
+        <div class="flexContainer">
+            <h3 class="fuente">Idiomas:</h3>
+            <p class="fuente nombres">Ingles, español.</p>
+        </div>
+        <div class="flexContainer">
+            <h3 class="fuente">Subtitulos:</h3>
+            <p class="fuente nombres">Español, ingles.</p>
+        </div>
+    </div>
+</div>
+<!--footer-->
 <footer id="footer">
     <div id="cuadrosFooter">
         <p id="primerCuadro" class="fuente"><a href="">Preguntas frecuentes</a></p>
@@ -179,12 +133,10 @@
         <i class="fab fa-invision icono"></i>
     </div>
 </footer>
-
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js " integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN " crossorigin="anonymous "></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js " integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/ " crossorigin="anonymous "></script>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="js/funtion.js "></script>
-
 </html>

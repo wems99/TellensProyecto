@@ -40,3 +40,4 @@ public class Solicitudes extends HttpServlet {
         request.getRequestDispatcher("resultadoSolicitud.jsp").forward(request, response);
     }
 }
+
