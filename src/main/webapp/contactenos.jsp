@@ -87,7 +87,7 @@
             <path d="M70.865,101.78c0,4.774,3.886,8.657,8.66,8.657c4.774,0,8.657-3.883,8.657-8.657c0-4.773-3.883-8.656-8.657-8.656    C74.751,93.124,70.865,97.006,70.865,101.78z"></path>
         </svg>
     </div>
-    <form action="#" method="post" id="contact_form">
+    <form action="#" method="post" id="contact_form" onsubmit="return miFuncion(this)">
         <div class="name">
             <label></label>
             <input type="text" placeholder="Nombre" name="name" id="name_input" required>
@@ -108,11 +108,30 @@
             <label ></label>
             <textarea name="message" placeholder="Informacion adicional" id="message_input" cols="30" rows="5" required></textarea>
         </div>
-        <!--reCatpcha-->
+    
+        <div class="captcha">
+            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="enabledSubmit"></div>
+        </div>
+        <!--reCatpcha
         <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
         
         </div>
-        <!--termina reCatpcha-->
+        termina reCatpcha-->
+    
+        <script>
+            function miFuncion(a) {
+                var response = grecaptcha.getResponse();
+
+                if(response.length == 0){
+                    alert("Captcha no verificado");
+                    return false;
+                    event.preventDefault();
+                } else {
+                    return true;
+                }
+            }
+        </script>
+        
         <div class="submit">
             <input type="submit" value="Enviar información" href="Solicitudes" method="POST" action="Solicitudes" id="form_button" />
         </div>
@@ -137,4 +156,5 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="js/funcionContactenos.js "></script>
 </html>
