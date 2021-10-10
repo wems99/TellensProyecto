@@ -115,18 +115,7 @@
             <%= request.getAttribute("message") %>
         </h3>
     </div>
-    <div>
-        <h2 class="fuente ">Genero </h2>
-        <h3 class="fuente">
-            <%= request.getAttribute("flexCheckDefault") %>
-        </h3>
-    </div>
-    <div>
-        <h2 class="fuente ">Tipo </h2>
-        <h3 class="fuente">
-            <%= request.getAttribute("flexCheckDefault") %>
-        </h3>
-    </div>
+
 
 </div>
 <footer id="footer">

@@ -106,7 +106,7 @@
     <div id="tarjetas">
         <div class="tarjetas row col-13">
             <div class="col-3">
-                <a href="/indexDetalles.html"><img class="imgs" src="img/Lo_que_el_viento_se_llev-833455217-large.jpg"></a>
+                <a href="Detalles/indexDetalles.html"><img class="imgs" src="img/Lo_que_el_viento_se_llev-833455217-large.jpg"></a>
             </div>
             <div class="col-3">
                 <a href="www.google.com"><img class="imgs" src="img/a few good men.jpg" alt=""></a>

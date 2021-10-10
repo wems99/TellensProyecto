@@ -16,7 +16,7 @@ public class Solicitudes extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String nombre, correo, telefono, mensaje,cantidad, tarjeta, generos, tipos,tipo;
+        String nombre, correo, telefono, mensaje,cantidad, tarjeta;
 
         nombre = request.getParameter("name");
         correo = request.getParameter("mail");
@@ -24,9 +24,7 @@ public class Solicitudes extends HttpServlet {
         mensaje = request.getParameter("message");
         cantidad = request.getParameter("cantidad");
         tarjeta = request.getParameter("tarjeta");
-        generos = request.getParameter("flexCheckDefault");
-        tipo = request.getParameter("flexCheckDefault1");
-        tipos = request.getParameter("flexCheckDefault2");
+
 
         request.setAttribute("name", nombre);
         request.setAttribute("mail", correo);
@@ -34,9 +32,6 @@ public class Solicitudes extends HttpServlet {
         request.setAttribute("message", mensaje);
         request.setAttribute("cantidad", cantidad);
         request.setAttribute("tarjeta", tarjeta);
-        request.setAttribute("flexCheckDefault", generos);
-        request.setAttribute("flexCheckDefault1", tipo);
-        request.setAttribute("flexCheckDefault2", tipos);
 
         request.getRequestDispatcher("resultadoSolicitud.jsp").forward(request, response);
     }
