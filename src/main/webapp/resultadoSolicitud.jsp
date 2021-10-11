@@ -116,9 +116,9 @@
         </h3>
     </div>
     <div>
-        <h2 class="fuente ">Precio Total</h2>
+        <h2 class="fuente ">Precio Total </h2>
         <h3 class="fuente">
-            <%= request.getAttribute("total") %>
+            $<%= request.getAttribute("total") %>
         </h3>
     </div>
 

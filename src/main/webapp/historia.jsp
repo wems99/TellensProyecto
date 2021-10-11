@@ -82,7 +82,7 @@
     <p>El negocio de las peliculas antiguas está poco actulizado, sin embargo, son muchos los clientes interesados por lo que es un honor para nosotros poder cumplir las necesidades de las personas que disfrutan la televisión de antaño.</p>
     <p>Comprometidos con hacer llegar tus películas favoritas a cada rincón de Costa Rica con los mejores mensajeros de nuestra entera confianza.
     </p>
-    <p>Surgimos desde 2020 a razón de la pandemia, para así ayudar a las personas a estar entretenidas en el confinamiento sanitario.
+    <p>Surgimos desde 2021 a razón de la pandemia, para así ayudar a las personas a estar entretenidas en el confinamiento sanitario.
     </p>
     <p>
         Nos encargamos de devolver los recuerdos a todas aquellas personas que vivieron el estreno de algunas películas en nuestro catálogo.

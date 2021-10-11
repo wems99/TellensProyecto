@@ -36,3 +36,13 @@ p {
     width: 80%;
     font-size: 18px;
 }
+#imgMision{
+    width: 30%;
+    text-align: center !important
+
+}
+#divImg{
+    margin-left: 40% !important;
+    margin-top: 3% !important;
+    margin-bottom: 1%;
+}

@@ -87,6 +87,9 @@
         </div>
     </div>
 </div>
+<div id="divImg">
+    <img id="imgMision" src="img/mision.jpg">
+</div>
 
 <footer id="footer">
     <div id="cuadrosFooter">
