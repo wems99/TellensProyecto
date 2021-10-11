@@ -76,17 +76,23 @@
 <!--Titulo principal-->
 <h1>Tellen`s Information</h1>
 
+
 <!--contenido mision y vision-->
 <div class="mision_vision-content">
     
     <!--Mision content-->
-    <div class="Mision_content">
+    <div class="mision_content">
         <label>Vision</label>
         <div>
             <p>Nuestra meta es hacer crecer esta comunidad de amantes de clasicos cinematograficos, no dejar que estas obras se pierdan y queden en el olvido; las nuevas generacion tienn el derecho de conocer este material.</p>
         </div>
     </div>
 </div>
+
+<div id="divImg">
+    <img id="imgVision" src="img/vision.jpg">
+</div>
+
 
 <footer id="footer">
     <div id="cuadrosFooter">

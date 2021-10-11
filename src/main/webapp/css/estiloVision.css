@@ -13,6 +13,12 @@ h1{
     text-align: center;
 }
 
+.mision_vision-content{
+    text-align: center !important;
+    width: 100%;
+
+}
+
 .mision_vision-content label{
     color:white;
     width: 10rem;
@@ -22,13 +28,20 @@ h1{
 
 }
 
-p{
+p {
     margin: 0 auto !important;
-    color:white;
-    text-align:center;
-    font-size: 35px;
+    color: white;
+    text-align: center;
+    width: 80%;
+    font-size: 18px;
 }
+#imgVision{
+    width: 30%;
+    text-align: center !important
 
-.Mision_content{
-    grid-columns: span 2;
+}
+#divImg{
+    margin-left: 38% !important;
+    margin-top: 3% !important;
+
 }
