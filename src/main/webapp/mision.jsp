@@ -77,11 +77,11 @@
 <h1>Tellen`s Information</h1>
 
 <!--contenido mision y vision-->
-<div class="mision_vision-content">
+<div id="mision_vision-content">
     
     <!--Mision content-->
-    <div class="Mision_content">
-        <label>Mision</label>
+    <div id="mision_content">
+        <label id="titulo" class="fuente">Mision</label>
         <div>
             <p>En tellen`s Cinema, queremos entretener a todas las personas con un interes en los clasicos cinematograficos, sin importar la edad y gustos. Nuestros clientes deciden disfrutas de nuestro contenido con una simple compra o alquiler del producto. Queremos que esta comunidad de amantes de estas peliculas puedan tener un lugar donde encontrar sus peliculas clasicas preferidas.</p>
         </div>

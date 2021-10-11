@@ -10,8 +10,9 @@ h1{
 }
 
 .mision_vision-content{
-    text-align: center;
-    width: 80%;
+    text-align: center !important;
+    width: 100%;
+    margin-left: 40% !important;
 }
 
 .mision_vision-content label{
@@ -22,13 +23,16 @@ h1{
     text-align: center;
 
 }
-
-p{
-    color:white;
-    text-align:left;
-    width: 80%;
+#titulo{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-left: 45%;
 }
-
-.Mision_content{
-    grid-columns: span 2;
+p {
+    margin: 0 auto !important;
+    color: white;
+    text-align: center;
+    width: 80%;
+    font-size: 18px;
 }

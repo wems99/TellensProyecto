@@ -23,8 +23,10 @@ h1{
 }
 
 p{
+    margin: 0 auto !important;
     color:white;
-    text-align:left;
+    text-align:center;
+    font-size: 35px;
 }
 
 .Mision_content{
