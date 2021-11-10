@@ -1,7 +1,5 @@
 package com.example.tellensproyecto.ui;
 
-import com.example.tellensproyecto.en.peliculas.Pelicula;
-
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
