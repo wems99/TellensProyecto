@@ -1,4 +1,4 @@
-package com.example.tellensproyecto;
+package com.example.tellensproyecto.ui;
 
 import java.io.*;
 import javax.servlet.ServletException;

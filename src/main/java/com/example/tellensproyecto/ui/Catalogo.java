@@ -1,4 +1,4 @@
-package com.example.tellensproyecto;
+package com.example.tellensproyecto.ui;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

@@ -1,15 +1,15 @@
-package com.example.tellensproyecto;
+package com.example.tellensproyecto.ui;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "MisionVision", value = "/MisionVision")
-public class MisionVision extends HttpServlet {
+@WebServlet(name = "Vision", value = "/Vision")
+public class Vision extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("misionVision.jsp").forward(request, response);
+        request.getRequestDispatcher("vision.jsp").forward(request, response);
     }
 
     @Override

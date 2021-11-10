@@ -1,4 +1,4 @@
-package com.example.tellensproyecto;
+package com.example.tellensproyecto.ui;
 
 import com.example.tellensproyecto.en.peliculas.Pelicula;
 
@@ -22,6 +22,7 @@ public class Solicitudes extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String nombre, correo, telefono, mensaje,cantidad, tarjeta, precio, total, precioFinal;
         int numeroEntero1, numeroEntero2, suma;
+
         nombre = request.getParameter("name");
         correo = request.getParameter("mail");
         telefono = request.getParameter("tel");
@@ -45,8 +46,6 @@ public class Solicitudes extends HttpServlet {
         request.setAttribute("cantidad", cantidad);
         request.setAttribute("tarjeta", tarjeta);
         request.setAttribute("total", precioFinal);
-
-
 
 
         request.getRequestDispatcher("resultadoSolicitud.jsp").forward(request, response);
