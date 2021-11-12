@@ -44,7 +44,6 @@ public class LoginServlet extends HttpServlet {
                     HttpSession session = request.getSession(true);
                     session.setMaxInactiveInterval(5*60);
 
-                    //podemos agregar un cookie tambien
                     Cookie message = new Cookie("mensaje", "Bienvenido");
                     response.addCookie(message);
 

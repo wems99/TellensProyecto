@@ -9,9 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estiloHome.css">
-    <link rel="stylesheet" href="css/estiloNav.css">
-    <link rel="stylesheet" href="css/estiloFooter.css">
+    <link rel="stylesheet" href="../css/estiloHome.css">
+    <link rel="stylesheet" href="../css/estiloNav.css">
+    <link rel="stylesheet" href="../css/estiloFooter.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,9 +22,12 @@
 </head>
 
 <body>
-
+<div class="float-rigth mr-5">
+    <span Bienvenido. ${sessionScope.usuario.nombreUsuario}></span>
+    <a href="../LogOutServlet">Cerrar sesión</a>
+</div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light fuente fondo">
-    <img id="logo" src="img/logo.png" alt="">
+    <img id="logo" src="../img/logo.png" alt="">
     <a class="navbar-brand fuente" href="#">Tellen's Cinema</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -64,7 +67,6 @@
             <a href="" class="fas fa-search"></a>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Registrarse</button>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Ingresar</button>
-            <c:forEach var="producto" items="${requestScope.productos}">
         </form>
     </div>
 </nav>
@@ -78,14 +80,14 @@
     <div class="carousel-inner">
 
         <div class="item">
-            <img class="imgs" src="img/godfather banner.jpg" alt="Chicago" style="width:100%;">
+            <img class="imgs" src="../img/godfather%20banner.jpg" alt="Chicago" style="width:100%;">
         </div>
         <div class="item active">
-            <img class="imgs" src="img/Grease-1978-1-1200x675.jpg" alt="Los Angeles" style="width:100%;">
+            <img class="imgs" src="../img/Grease-1978-1-1200x675.jpg" alt="Los Angeles" style="width:100%;">
         </div>
 
         <div class="item">
-            <img class="imgs" src="img/goodfellas banner.jpg" alt="New york" style="width:100%;">
+            <img class="imgs" src="../img/goodfellas%20banner.jpg" alt="New york" style="width:100%;">
         </div>
     </div>
 
@@ -108,35 +110,35 @@
     <div id="tarjetas">
         <div class="tarjetas row col-13">
             <div class="col-3">
-                <a href="detalles.jsp"><img class="imgs" src="img/Lo_que_el_viento_se_llev-833455217-large.jpg"></a>
+                <a href="../detalles.jsp"><img class="imgs" src="../img/Lo_que_el_viento_se_llev-833455217-large.jpg"></a>
             </div>
             <div class="col-3">
-                <a href="detalleAFewGoodMan.jsp"><img class="imgs" src="img/a few good men.jpg" alt=""></a>
+                <a href="../detalleAFewGoodMan.jsp"><img class="imgs" src="../img/a%20few%20good%20men.jpg" alt=""></a>
 
             </div>
             <div class="col-3">
-                <a href="detalleWallStreet.jsp"><img class="imgs" src="img/WALLSTREET.jpg" alt=""></a>
+                <a href="../detalleWallStreet.jsp"><img class="imgs" src="../img/WALLSTREET.jpg" alt=""></a>
 
             </div>
             <div class="col-3">
-                <a href="detalleTopGun.jsp"><img class="imgs"  src="img/TOP GUN.jpg" alt=" "></a>
+                <a href="../detalleTopGun.jsp"><img class="imgs" src="../img/TOP%20GUN.jpg" alt=" "></a>
 
             </div>
         </div>
         <div class="tarjetas row col-13">
             <div class="col-3">
-                <a href="destalleTheBreakFastClub.jsp"><img class="imgs" src="img/Breakfast club portada.jpg"></a>
+                <a href="../destalleTheBreakFastClub.jsp"><img class="imgs" src="../img/Breakfast%20club%20portada.jpg"></a>
             </div>
             <div class="col-3">
-                <a href="detalleCrimsonTide.jsp"><img class="imgs" src="img/CRIMSON TIDE.jpg" alt=""></a>
+                <a href="../detalleCrimsonTide.jsp"><img class="imgs" src="../img/CRIMSON%20TIDE.jpg" alt=""></a>
 
             </div>
             <div class="col-3">
-                <a href="detalleCadenaPerpetua.jsp"><img class="imgs" src="img/cadena perpetua portada.jpg" alt=""></a>
+                <a href="../detalleCadenaPerpetua.jsp"><img class="imgs" src="../img/cadena%20perpetua%20portada.jpg" alt=""></a>
 
             </div>
             <div class="col-3">
-                <a href="detalleGreatScape.jsp"><img class="imgs"  src="img/GREAT ESCAPE.jpg" alt=" "></a>
+                <a href="../detalleGreatScape.jsp"><img class="imgs" src="../img/GREAT%20ESCAPE.jpg" alt=" "></a>
 
             </div>
         </div>
@@ -146,19 +148,19 @@
 <div id="contVideo">
     <div class="distancia">
         <video width="100%" height="240" controls>
-            <source src="video/y2mate.com - Gone With The Wind  75th Anniversary Trailer  Warner Bros Entertainment_480p.mp4" type="video/mp4">
+            <source src="../video/y2mate.com%20-%20Gone%20With%20The%20Wind%20%2075th%20Anniversary%20Trailer%20%20Warner%20Bros%20Entertainment_480p.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
     <div class="distancia">
         <video width="100%" height="240" controls>
-            <source src="video/GREASE _ Trailer _ Paramount Movies.mp4" type="video/mp4">
+            <source src="../video/GREASE%20_%20Trailer%20_%20Paramount%20Movies.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
     <div class="distancia">
         <video width="100%" height="240" controls>
-            <source src="video/y2mate.com - The Breakfast Club Official Trailer 1  Paul Gleason Movie 1985 HD_360p.mp4" type="video/mp4">
+            <source src="../video/y2mate.com%20-%20The%20Breakfast%20Club%20Official%20Trailer%201%20%20Paul%20Gleason%20Movie%201985%20HD_360p.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
