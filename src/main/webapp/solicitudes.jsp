@@ -158,6 +158,7 @@
                 <div class="precio-container">
                     <label class="fuenteNegra">Precio de la pelicula seleccionada:</label>
                     <input  id="precio_input" readonly="readonly" value="$ <%= request.getAttribute("precio")%>">
+                    <input  id="name_input" readonly="readonly" value="$ <%= request.getAttribute("nombre")%>">
                 </div>
                 <div class="captcha">
                     <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="enabledSubmit"></div>

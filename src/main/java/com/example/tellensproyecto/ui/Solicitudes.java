@@ -4,6 +4,8 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 @WebServlet(name = "Solicitudes", value = "/Solicitudes")
 public class Solicitudes extends HttpServlet {
@@ -49,4 +51,3 @@ public class Solicitudes extends HttpServlet {
         request.getRequestDispatcher("resultadoSolicitud.jsp").forward(request, response);
     }
 }
-

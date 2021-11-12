@@ -66,6 +66,8 @@
     <div class="tarjetas ">
         <div class="col-2">
             <a href="Solicitudes?precio=4500" method="POST" action="Solicitudes"><img class="imgs" src="img/masCannibal.jpg"></a>
+
+
             <div class="une">
                 <p class="fuenteCatalogo une" >Precio $4500</p>
                 <input type="hidden" id="precioPopu1" class="precios" value="450000" >

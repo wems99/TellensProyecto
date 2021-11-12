@@ -5,7 +5,7 @@ import com.example.tellensproyecto.entities.Pelicula;
 
 import java.util.ArrayList;
 
-public class PeliculaServiceImpl {
+public class PeliculaServiceImpl implements PeliculaService{
 
     private PeliculaDao peliculaDao;
 
@@ -14,8 +14,6 @@ public class PeliculaServiceImpl {
     }
 
     public Boolean insertarProducto(Pelicula pelicula){
-
-        //validacion a nivel de regla de negocio
 
         return peliculaDao.insertarPelicula(pelicula);
     }
