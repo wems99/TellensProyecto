@@ -34,6 +34,8 @@ public class LoginServlet extends HttpServlet {
 
                 LoginService loginService = new LoginServiceImpl();
                 usuario = loginService.login(usuario);
+
+
                 if(Optional.ofNullable(usuario.getTipoUsuario()).isPresent()){
 
                     HttpSession oldSession = request.getSession(false);
