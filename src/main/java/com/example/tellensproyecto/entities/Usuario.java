@@ -4,18 +4,23 @@ public class Usuario {
     private int id;
     private String nombreUsuario;
     private String password;
-    private Integer estado;
     private Integer tipoUsuario;
+    private String fechaCreacion;
+    private String nombre;
+    private String ultimoLogueo;
+
 
     public Usuario() {
     }
 
-    public Usuario(int id, String nombreUsuario, String password, Integer estado, Integer tipoUsuario) {
+    public Usuario(int id, String nombreUsuario, String password, Integer tipoUsuario, String fechaCreacion, String nombre, String ultimoLogueo) {
         this.id = id;
         this.nombreUsuario = nombreUsuario;
         this.password = password;
-        this.estado = estado;
         this.tipoUsuario = tipoUsuario;
+        this.fechaCreacion = fechaCreacion;
+        this.nombre = nombre;
+        this.ultimoLogueo = ultimoLogueo;
     }
 
     public int getId() {
@@ -42,19 +47,35 @@ public class Usuario {
         this.password = password;
     }
 
-    public Integer getEstado() {
-        return estado;
-    }
-
-    public void setEstado(Integer estado) {
-        this.estado = estado;
-    }
-
     public Integer getTipoUsuario() {
         return tipoUsuario;
     }
 
     public void setTipoUsuario(Integer tipoUsuario) {
         this.tipoUsuario = tipoUsuario;
+    }
+
+    public String getFechaCreacion() {
+        return fechaCreacion;
+    }
+
+    public void setFechaCreacion(String fechaCreacion) {
+        this.fechaCreacion = fechaCreacion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getUltimoLogueo() {
+        return ultimoLogueo;
+    }
+
+    public void setUltimoLogueo(String ultimoLogueo) {
+        this.ultimoLogueo = ultimoLogueo;
     }
 }

@@ -13,7 +13,7 @@ public class LoginDao {
         ResultSet rs;
         try {
 
-            String sql = "select nombreUsuario, tipoUsuario, estado from usuario where nombreUsuario=? and password=?";
+            String sql = "select nombreUsuario,fechaCreacion,tipoUsuario,password,nombre,ultimoLogueo from usuario where nombreUsuario=? and password=?";
             PreparedStatement ps =connection.prepareStatement(sql);
             ps.setString(1, usu.getNombreUsuario());
             ps.setString(2, usu.getPassword());
@@ -21,7 +21,10 @@ public class LoginDao {
             if (rs.next()) {
                 usu.setNombreUsuario(rs.getString("nombreUsuario"));
                 usu.setTipoUsuario(rs.getInt("tipoUsuario"));
-                usu.setEstado(rs.getInt("estado"));
+                usu.setNombre(rs.getString("nombre"));
+                usu.setFechaCreacion(rs.getString("fechaCreacion"));
+                usu.setUltimoLogueo(rs.getString("ultimoLogueo"));
+
             }
 
         } catch (Exception e)
