@@ -35,29 +35,29 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ">
             <li class="nav-item active">
-                <a href="Inicio" method="POST" action="Inicio" class="nav-link" href="#">Inicio<span class="sr-only"></span></a>
+                <a href="../Inicio" method="POST" action="Inicio" class="nav-link" href="#">Inicio<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-                <a href="Catalogo" method="POST" action="Catalogo" class="nav-link" href="#">Catálogo</a>
+                <a href="../Catalogo" method="POST" action="Catalogo" class="nav-link" href="#">Catálogo</a>
             </li>
             <li class="nav-item">
-                <a href="Historia" method="POST" action="Historia" class="nav-link" href="#">Nuestra historia</a>
+                <a href="../Historia" method="POST" action="Historia" class="nav-link" href="#">Nuestra historia</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Misión y visión
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a href="Mision" method="POST" action="Mision" class="dropdown-item" href="#">Mision</a>
-                    <a href="Vision" method="POST" action="Vision" class="dropdown-item" href="#">Vision</a>
+                    <a href="../Mision" method="POST" action="Mision" class="dropdown-item" href="#">Mision</a>
+                    <a href="../Vision" method="POST" action="Vision" class="dropdown-item" href="#">Vision</a>
                     <div class="dropdown-divider"></div>
                 </div>
             </li>
             <li class="nav-item">
-                <a href="Visitenos" method="POST" action="Visitenos" class="nav-link" href="#">Visitenos</a>
+                <a href="../Visitenos" method="POST" action="Visitenos" class="nav-link" href="#">Visitenos</a>
             </li>
             <li class="nav-item">
-                <a href="Contactenos" method="POST" action="Contactenos" class="nav-link" href="#">Contáctenos</a>
+                <a href="../Contactenos" method="POST" action="Contactenos" class="nav-link" href="#">Contáctenos</a>
             </li>
 
 
@@ -101,7 +101,7 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-<aside method="POST" action="Home" id="sctPelis">
+<aside  id="sctPelis">
     <div></div>
     <div ></div>
     <h2 class="fuente">Lo más buscado</h2>

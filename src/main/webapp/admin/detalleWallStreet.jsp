@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: allen
   Date: 09/10/2021
-  Time: 21:18
+  Time: 21:07
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -28,7 +28,7 @@
 <!--nav bar-->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fuente fondo">
-    <img id="logo" src="img/logo.png" alt="">
+    <img id="logo" src="../img/logo.png" alt="">
     <a class="navbar-brand fuente" href="#">Tellen's Cinema</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -60,15 +60,14 @@
             <li class="nav-item">
                 <a href="Contactenos" method="POST" action="Contactenos" class="nav-link" href="#">Contáctenos</a>
             </li>
-        
-        
+
+
         </ul>
         <form id="busca" class="form-inline my-2 ">
             <input id="buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
             <a href="" class="fas fa-search"></a>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Registrarse</button>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Ingresar</button>
-        
         </form>
     </div>
 </nav>
@@ -76,16 +75,17 @@
 <!--cotent movie-->
 
 <div id="linea"></div>
-<h1 class="fuente">Top Gun</h1>
+<h1 class="fuente">Wall Street</h1>
 <div id="linea"></div>
 <div id="detalles" class="flexContainer">
     <div class="principal">
         <h2 class="fuente">Sipnosis</h2>
-        <p id="sipnosis" class="fuente">El teniente Pete Mitchell, conocido como "Maverick", es un talentoso y
-            rebelde aviador de Grumman F-14 Tomcat de la Armada de los Estados Unidos. "Maverick" es el hijo de un
-            piloto que participó en la guerra de Vietnam, que fue derribado en circunstancias misteriosas, y fue dado
-            por desaparecido en combate debido a errores cometidos por él mismo, por lo que "Maverick" está luchando
-            todo el tiempo por librarse de la mala fama que cayó sobre su nombre por los supuestos fallos de su padre....</p>
+        <p id="sipnosis" class="fuente">Bud Fox (Charlie Sheen) es un joven broker que intenta abrirse camino en Wall Street.
+            Durante el día trabaja en Jackson Steinem, y en sus ratos libres intenta conocer a uno de los grandes magnates de
+            las inversiones a quien admira: Gordon Gekko (Michael Douglas). En la celebración de su cumpleaños le regala una caja
+            de habanos cubanos y le revela información clasificada que hará subir las acciones de la compañía aérea donde trabaja su padre.
+            Gekko decide contratarle como agente, por su persistencia y para aprovecharse de sus contactos, y así conseguir información clasificada de
+            otros inversionistas.....</p>
     
     </div>
     <div id="reparto" class="secundario">
@@ -93,18 +93,18 @@
         <h2 class="fuente"><b>Direccion y Reparto</b> </h2>
         <div class="flexContainer">
             <h3 class="fuente">Dirección:</h3>
-            <p class="fuente nombres">Tony Scott </p>
+            <p class="fuente nombres">Oliver Stone</p>
         </div>
         <div class="flexContainer">
             <h3 class="fuente">Reparto:</h3>
-            <p class="fuente nombres">Kelly McGillis. Tom Cruise. Val Kilmer. Anthony Edwards.</p>
+            <p class="fuente nombres">Michael Dougles. Charlie Sheen. Daryl Hannah. Hal Holbrook. Martin Sheen.</p>
         </div>
     </div>
 </div>
 <div id="detalles" class="flexContainer">
     <div class="principal">
         <h2 class="fuente">Premios y nominaciones</h2>
-        <p class="fuente">Premio Oscar al mejor sonido, Premio Globo de Oro a la Mejor Banda Sonora, Premio Oscar a la Mejor Edicion de Sonido, Premio People Choise a la Pelicula Favorita</p>
+        <p class="fuente">Premio orcar 1988: al mejor actor principal(Michael Douglas), Premio Globo de Oro 1988: mejor actuacion, Premio di Donatello 1988: al mejor actor extrangero</p>
     </div>
     <div id="premio" class="secundario">
         <h2 class="fuente">Audios y subtitulos</h2>

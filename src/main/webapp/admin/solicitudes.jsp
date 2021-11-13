@@ -43,7 +43,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fuente fondo">
-    <img id="logo" src="img/logo.png" alt="">
+    <img id="logo" src="../img/logo.png" alt="">
     <a class="navbar-brand fuente" href="#">Tellen's Cinema</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -83,7 +83,6 @@
             <a href="" class="fas fa-search"></a>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Registrarse</button>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Ingresar</button>
-
         </form>
     </div>
 </nav>

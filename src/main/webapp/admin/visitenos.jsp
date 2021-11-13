@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: allen
-  Date: 09/10/2021
-  Time: 21:07
+  Date: 04/10/2021
+  Time: 12:50
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estiloHome.css">
+    <link rel="stylesheet" href="css/visitenos.css">
     <link rel="stylesheet" href="css/estiloNav.css">
     <link rel="stylesheet" href="css/estiloFooter.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -20,15 +20,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estiloDetalleJSP.css">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <title>Tellen's Cinema</title>
+    <style>
+        .map{width:400px;height: 300px}
+    </style>
 </head>
 <body>
 
-<!--nav bar-->
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light fuente fondo">
-    <img id="logo" src="img/logo.png" alt="">
+    <img id="logo" src="../img/logo.png" alt="">
     <a class="navbar-brand fuente" href="#">Tellen's Cinema</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -60,66 +62,77 @@
             <li class="nav-item">
                 <a href="Contactenos" method="POST" action="Contactenos" class="nav-link" href="#">Contáctenos</a>
             </li>
-        
-        
+
+
         </ul>
         <form id="busca" class="form-inline my-2 ">
             <input id="buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
             <a href="" class="fas fa-search"></a>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Registrarse</button>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Ingresar</button>
-        
         </form>
     </div>
 </nav>
-
-<!--cotent movie-->
-
-<div id="linea"></div>
-<h1 class="fuente">Wall Street</h1>
-<div id="linea"></div>
-<div id="detalles" class="flexContainer">
-    <div class="principal">
-        <h2 class="fuente">Sipnosis</h2>
-        <p id="sipnosis" class="fuente">Bud Fox (Charlie Sheen) es un joven broker que intenta abrirse camino en Wall Street.
-            Durante el día trabaja en Jackson Steinem, y en sus ratos libres intenta conocer a uno de los grandes magnates de
-            las inversiones a quien admira: Gordon Gekko (Michael Douglas). En la celebración de su cumpleaños le regala una caja
-            de habanos cubanos y le revela información clasificada que hará subir las acciones de la compañía aérea donde trabaja su padre.
-            Gekko decide contratarle como agente, por su persistencia y para aprovecharse de sus contactos, y así conseguir información clasificada de
-            otros inversionistas.....</p>
+<h1>About Us</h1>
+<div class="visitenos-wrapper">
     
+    <!--grupo direccion-->
+    <div class="informacion-content">
+        <h2>Direccion</h2>
+        <p>Nos encontramos en Heredia, 200mts oeste del BK contiguo entrada Norte Una </p>
     </div>
-    <div id="reparto" class="secundario">
-        
-        <h2 class="fuente"><b>Direccion y Reparto</b> </h2>
-        <div class="flexContainer">
-            <h3 class="fuente">Dirección:</h3>
-            <p class="fuente nombres">Oliver Stone</p>
-        </div>
-        <div class="flexContainer">
-            <h3 class="fuente">Reparto:</h3>
-            <p class="fuente nombres">Michael Dougles. Charlie Sheen. Daryl Hannah. Hal Holbrook. Martin Sheen.</p>
-        </div>
+    
+    <!--grupo telefono-->
+    <div class="informacion-content">
+        <h2>Telefonos</h2>
+        <i class="fab fa-whatsapp"></i>
+        <p>(506) 89845122 </p>
+        <p>(506) 83865333 </p>
     </div>
+    
+    <!--grupo correo-->
+    <div class="informacion-content">
+        <h2>Correos</h2>
+        <p>allen.blanco.contreras@est.una.ac.cr</p>
+        <p>tere.solano.solis@est.una.ac.cr</p>
+    </div>
+    
+    <!--Grupo fax-->
+    <div class="informacion-content">
+        <h2>Fax</h2>
+        <p>964 778 243</p>
+    </div>
+    
 </div>
-<div id="detalles" class="flexContainer">
-    <div class="principal">
-        <h2 class="fuente">Premios y nominaciones</h2>
-        <p class="fuente">Premio orcar 1988: al mejor actor principal(Michael Douglas), Premio Globo de Oro 1988: mejor actuacion, Premio di Donatello 1988: al mejor actor extrangero</p>
-    </div>
-    <div id="premio" class="secundario">
-        <h2 class="fuente">Audios y subtitulos</h2>
-        <div class="flexContainer">
-            <h3 class="fuente">Idiomas:</h3>
-            <p class="fuente nombres">Ingles, español.</p>
-        </div>
-        <div class="flexContainer">
-            <h3 class="fuente">Subtitulos:</h3>
-            <p class="fuente nombres">Español, ingles.</p>
-        </div>
-    </div>
+
+<!--geolocalizacion-->
+<div class="map-container">
+    <div class="map" id="map"></div>
+    
+    <script>
+
+        var coordenadas_content = [9.99745,-84.11136];
+        var zoom_incial = 17;
+
+        var map = L.map('map').setView(coordenadas_content, zoom_incial);
+
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+
+        var popup = L.popup({closeButton: false});
+
+        popup.setLatLng(coordenadas_content);
+
+        popup.setContent('<p><strong>Tellens</strong></p>' + '<strong>Telefono:</strong> 89845122 <br>'
+            + '<strong>Horario:</strong> de 10am a 8pm <br>' + '<strong>E-mail:</strong> allen.blanco.contreras@est.una.ac.cr <br>'
+            + '<strong>Direccion postal:</strong><br>' + 'salida norte, Padre Royo<br>' + '86-3000-UNA');
+
+        popup.openOn(map);
+    </script>
 </div>
-<!--footer-->
+
+<!--termina geolocalizacion-->
+
+<!--footer comienza-->
 <footer id="footer">
     <div id="cuadrosFooter">
         <p id="primerCuadro" class="fuente"><a href="">Preguntas frecuentes</a></p>
@@ -136,10 +149,9 @@
         <i class="fab fa-invision icono"></i>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js " integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN " crossorigin="anonymous "></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js " integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/ " crossorigin="anonymous "></script>
+<!--footer termina-->
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="js/funtion.js "></script>
 </html>

@@ -14,7 +14,7 @@ public class Solicitudes extends HttpServlet {
        String precio;
         precio = request.getParameter("precio");
         request.setAttribute("precio",precio);
-        request.getRequestDispatcher("solicitudes.jsp").forward(request, response);
+        request.getRequestDispatcher("admin/solicitudes.jsp").forward(request, response);
 
     }
 

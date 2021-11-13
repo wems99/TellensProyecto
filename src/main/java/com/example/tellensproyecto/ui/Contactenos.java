@@ -9,7 +9,7 @@ import java.io.IOException;
 public class Contactenos extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("contactenos.jsp").forward(request, response);
+        request.getRequestDispatcher("admin/contactenos.jsp").forward(request, response);
     }
 
     @Override
@@ -29,7 +29,7 @@ public class Contactenos extends HttpServlet {
         request.setAttribute("message_input", mensaje);
         request.setAttribute("tarjeta_input", tarjeta);
 
-        request.getRequestDispatcher("resultadoContactenos.jsp").forward(request, response);
+        request.getRequestDispatcher("admin/resultadoContactenos.jsp").forward(request, response);
 
     }
 }

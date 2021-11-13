@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: allen
-  Date: 09/10/2021
-  Time: 21:40
+  Date: 07/10/2021
+  Time: 21:15
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estiloHome.css">
+    <link rel="stylesheet" href="css/estiloMision.css">
     <link rel="stylesheet" href="css/estiloNav.css">
     <link rel="stylesheet" href="css/estiloFooter.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -20,15 +20,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estiloDetalleJSP.css">
+    
     <title>Tellen's Cinema</title>
 </head>
+
+
 <body>
 
-<!--nav bar-->
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light fuente fondo">
-    <img id="logo" src="img/logo.png" alt="">
+    <img id="logo" src="../img/logo.png" alt="">
     <a class="navbar-brand fuente" href="#">Tellen's Cinema</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -60,63 +60,36 @@
             <li class="nav-item">
                 <a href="Contactenos" method="POST" action="Contactenos" class="nav-link" href="#">Contáctenos</a>
             </li>
-        
-        
+
+
         </ul>
         <form id="busca" class="form-inline my-2 ">
             <input id="buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
             <a href="" class="fas fa-search"></a>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Registrarse</button>
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Ingresar</button>
-        
         </form>
     </div>
 </nav>
 
-<!--cotent movie-->
+<!--Titulo principal-->
+<h1>Tellen`s Information</h1>
 
-<div id="linea"></div>
-<h1 class="fuente">The ShawShank Redemption</h1>
-<div id="linea"></div>
-<div id="detalles" class="flexContainer">
-    <div class="principal">
-        <h2 class="fuente">Sipnosis</h2>
-        <p id="sipnosis" class="fuente">En 1947, Andrew Dufresne (Tim Robbins), vicepresidente de un importante banco de Portland, Maine, es juzgado
-            por el homicidio de su esposa y de un hombre con quien ella tenía una aventura. Aunque insiste con su inocencia, las pruebas son motivo suficiente
-            para que el juez lo condene a cumplir dos cadenas perpetuas en la prisión estatal de Shawshank....</p>
+<!--contenido mision y vision-->
+<div id="mision_vision-content">
     
-    </div>
-    <div id="reparto" class="secundario">
-        
-        <h2 class="fuente"><b>Direccion y Reparto</b> </h2>
-        <div class="flexContainer">
-            <h3 class="fuente">Dirección:</h3>
-            <p class="fuente nombres">Frank Darabont </p>
-        </div>
-        <div class="flexContainer">
-            <h3 class="fuente">Reparto:</h3>
-            <p class="fuente nombres">Morgan Freeman. Tim Robbins. Bob Gunton. William Sadler. Clancy Brown.</p>
+    <!--Mision content-->
+    <div id="mision_content">
+        <label id="titulo" class="fuente">Mision</label>
+        <div>
+            <p>En tellen`s Cinema, queremos entretener a todas las personas con un interes en los clasicos cinematograficos, sin importar la edad y gustos. Nuestros clientes deciden disfrutas de nuestro contenido con una simple compra o alquiler del producto. Queremos que esta comunidad de amantes de estas peliculas puedan tener un lugar donde encontrar sus peliculas clasicas preferidas.</p>
         </div>
     </div>
 </div>
-<div id="detalles" class="flexContainer">
-    <div class="principal">
-        <h2 class="fuente">Premios y nominaciones</h2>
-        <p class="fuente">Premio Oscar a la Mejor Pelicula, Premio Orcar Mejor Actor, Premio Oscar mejor Guion Adaptado, Premio Oscar Mejor Banda Sonora</p>
-    </div>
-    <div id="premio" class="secundario">
-        <h2 class="fuente">Audios y subtitulos</h2>
-        <div class="flexContainer">
-            <h3 class="fuente">Idiomas:</h3>
-            <p class="fuente nombres">Ingles, español.</p>
-        </div>
-        <div class="flexContainer">
-            <h3 class="fuente">Subtitulos:</h3>
-            <p class="fuente nombres">Español, ingles.</p>
-        </div>
-    </div>
+<div id="divImg">
+    <img id="imgMision" src="img/mision.jpg">
 </div>
-<!--footer-->
+
 <footer id="footer">
     <div id="cuadrosFooter">
         <p id="primerCuadro" class="fuente"><a href="">Preguntas frecuentes</a></p>
@@ -133,10 +106,8 @@
         <i class="fab fa-invision icono"></i>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js " integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN " crossorigin="anonymous "></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js " integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/ " crossorigin="anonymous "></script>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="js/funtion.js "></script>
 </html>

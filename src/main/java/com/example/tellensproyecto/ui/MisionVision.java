@@ -9,11 +9,11 @@ import java.io.IOException;
 public class MisionVision extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("misionVision.jsp").forward(request, response);
+        request.getRequestDispatcher("admin/misionVision.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.getRequestDispatcher("admin/mision.jsp").forward(request, response);
     }
 }

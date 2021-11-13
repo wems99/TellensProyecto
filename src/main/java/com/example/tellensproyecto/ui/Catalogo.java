@@ -10,11 +10,12 @@ import com.example.tellensproyecto.entities.Pelicula;
 public class Catalogo extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("catalogos.jsp").forward(request, response);
+        request.getRequestDispatcher("admin/catalogos.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher("admin/catalogos.jsp").forward(request, response);
 
     }
 }
