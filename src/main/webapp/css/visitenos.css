@@ -31,3 +31,16 @@ h1{
     margin-left: 40%;
     margin-bottom: 30px;
 }
+.my-2 {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+    padding-right: 7% !important;
+    display: flex !important;
+}
+
+.navbar-collapse{
+    padding-left: 73px !important;
+}
+.navbar-nav {
+    width: 60% !important;
+}

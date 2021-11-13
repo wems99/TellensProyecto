@@ -174,3 +174,16 @@ h1 .fuente {
 .precio-container{
    text-align: center;
 }
+.my-2 {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+    padding-right: 7% !important;
+    display: flex !important;
+}
+
+.navbar-collapse{
+    padding-left: 73px !important;
+}
+.navbar-nav {
+    width: 100% !important;
+}
