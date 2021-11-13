@@ -41,9 +41,12 @@
 </head>
 
 <body>
-
+<div  class="contLogOut" >
+    <span>Bienvenido ${sessionScope.usuario.nombreUsuario}</span>
+    <a class="logOut" href="../LogOutServlet">Cerrar sesión</a>
+</div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light fuente fondo">
-    <img id="logo" src="../img/logo.png" alt="">
+    <img id="logo" src="img/logo.png" alt="">
     <a class="navbar-brand fuente" href="#">Tellen's Cinema</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

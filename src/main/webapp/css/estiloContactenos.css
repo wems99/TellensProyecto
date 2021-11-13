@@ -5,7 +5,11 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-
+.contLogOut{
+    background-color: black !important;
+    color: white;
+    margin-top: 0 !important;
+}
 body {
     background: #F2F3EB;
 }

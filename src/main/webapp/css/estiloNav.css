@@ -11,6 +11,7 @@
 .navbar {
     background-color: black !important;
     margin-bottom: 0% !important;
+    padding-top: 0 !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -99,4 +100,16 @@ textarea {
     white-space: nowrap;
     background-color: black !important;
     border: 2px solid black !important;
+}
+.contLogOut{
+    font-family: 'Unna', serif;
+    font-size: 17px;
+    padding-left: 76%;
+    color: white;
+    margin-top: 5px;
+}
+.logOut{
+    border: 2px white solid;
+    border-radius: 10px;
+    margin-left: 18px;
 }
