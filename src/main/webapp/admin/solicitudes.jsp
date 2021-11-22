@@ -188,7 +188,7 @@
             </div>
             
             <div class="relative fullwidth col-xs-12">
-                <button type="submit" id="submit" name="submit" class="form-btn semibold" method="POST" action="Solicitudes">Enviar informacion</button>
+                <button type="submit" id="submit" name="submit" class="form-btn semibold" method="POST" action="Solicitudes">Pagar</button>
             </div>
             
             <div class="clear"></div>

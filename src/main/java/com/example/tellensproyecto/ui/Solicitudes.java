@@ -20,7 +20,7 @@ public class Solicitudes extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String nombre, correo, telefono, mensaje,cantidad, tarjeta, precio, total, precioFinal;
+   /*     String nombre, correo, telefono, mensaje,cantidad, tarjeta, precio, total, precioFinal;
         int numeroEntero1, numeroEntero2, suma;
 
         nombre = request.getParameter("name");
@@ -47,7 +47,7 @@ public class Solicitudes extends HttpServlet {
         request.setAttribute("tarjeta", tarjeta);
         request.setAttribute("total", precioFinal);
 
-
-        request.getRequestDispatcher("resultadoSolicitud.jsp").forward(request, response);
+*/
+        request.getRequestDispatcher("admin/formPago.jsp").forward(request, response);
     }
 }

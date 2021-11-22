@@ -22,6 +22,6 @@
 </div>
 
 </body>
-<script src="/funtionLogin.js "></script>
+
 
 </html>

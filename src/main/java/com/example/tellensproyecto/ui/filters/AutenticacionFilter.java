@@ -28,7 +28,7 @@ public class AutenticacionFilter implements Filter {
         if(null==session.getAttribute("usuario")) {
             request.setAttribute ("tips", "Actualmente no estás conectado, ¡inicia sesión primero!");
             System.out.println("tips==============");
-            httpResp.sendRedirect(httpR.getContextPath() + "/index.html");
+            httpResp.sendRedirect(httpR.getContextPath() + "/login.jsp");
         }else {
             chain.doFilter(request, response);
         }

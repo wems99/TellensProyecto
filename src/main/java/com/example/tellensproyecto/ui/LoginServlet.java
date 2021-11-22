@@ -50,7 +50,7 @@ public class LoginServlet extends HttpServlet {
                     response.addCookie(message);
 
                     session.setAttribute("usuario", usuario);
-                    response.sendRedirect("admin/index.jsp");
+                    response.sendRedirect("index.jsp");
                 }else{
                     throw new Exception("Login Incorrecto");
                 }

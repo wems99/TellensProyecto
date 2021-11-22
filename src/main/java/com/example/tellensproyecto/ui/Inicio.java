@@ -10,11 +10,11 @@ public class Inicio extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        response.sendRedirect("admin/index.jsp");
+        response.sendRedirect("index.jsp");
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.sendRedirect("admin/index.jsp");
+        response.sendRedirect("index.jsp");
     }
 }
