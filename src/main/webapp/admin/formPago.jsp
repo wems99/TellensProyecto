@@ -82,7 +82,7 @@
 
                 <div class="col-50">
                     <h3>Datos de pago</h3>
-                    <label for="fname">Seleccione el tipo de tarjeta</label>
+                    <label>Seleccione el tipo de tarjeta</label>
                     <div class="icon-container">
                         <a class="fab fa-cc-visa" style="color: navy;"></a>
                         <a class="fab fa-cc-amex" style="color: blue;"></a>

@@ -41,3 +41,13 @@ a {
     display: flex;
     width: 70%;
 }
+.tabla{
+    width: 1000px;
+    border: 0;
+    background-color: black !important;
+}
+table{
+    width: 1000px;
+    border: 0;
+    background-color: black;
+}

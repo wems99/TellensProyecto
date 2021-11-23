@@ -21,14 +21,14 @@ public class PeliculaServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String nombre, precio, tipo;
+        String nombre, precio, genero;
         try {
             nombre = request.getParameter("nombre");
             if (nombre == null && nombre.equals("")) {
                 throw new Exception("Nombre no definido");
             }
-            tipo = request.getParameter("tipo");
-            if (tipo == null && tipo.equals("")) {
+            genero = request.getParameter("tipo");
+            if (genero == null && genero.equals("")) {
                 throw new Exception("Descripcion no definida");
             }
             precio = request.getParameter("precio");
@@ -38,9 +38,9 @@ public class PeliculaServlet extends HttpServlet {
 
             Pelicula pelicula = new Pelicula();
 
-            pelicula.setNombre(nombre);
-            pelicula.setPrecio(Double.parseDouble(precio));
-            pelicula.setTipo(tipo);
+            pelicula.setTitulo(nombre);
+            pelicula.setPrecio(Integer.parseInt(precio));
+            pelicula.setGenero(genero);
 
             PeliculaService peliculaService = new PeliculaServiceImpl();
             Boolean resultado = peliculaService.insertarProducto(pelicula);

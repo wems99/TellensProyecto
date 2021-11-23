@@ -2,40 +2,90 @@ package com.example.tellensproyecto.entities;
 
 public class Pelicula {
 
-    String nombre;
-    double precio;
-    String tipo;
-
-    public Pelicula(String nombre, double precio, String tipo) {
-        this.nombre = nombre;
-        this.precio = precio;
-        this.tipo = tipo;
-    }
+    private int idPelicula;
+    private String titulo;
+    private String descripcion;
+    private String genero;
+    private String director;
+    private String anno;
+    private int precio;
+    private String imagen;
 
     public Pelicula() {
     }
 
-    public String getNombre() {
-        return nombre;
+    public Pelicula(int idPelicula, String titulo, String descripcion, String genero, String director, String anno, int precio, String imagen) {
+        this.idPelicula = idPelicula;
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+        this.genero = genero;
+        this.director = director;
+        this.anno = anno;
+        this.precio = precio;
+        this.imagen = imagen;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public String getImagen() {
+        return imagen;
     }
 
-    public double getPrecio() {
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
+    public int getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(int precio) {
         this.precio = precio;
     }
 
-    public String getTipo() {
-        return tipo;
+    public int getIdPelicula() {
+        return idPelicula;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setIdPelicula(int idPelicula) {
+        this.idPelicula = idPelicula;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getDirector() {
+        return director;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
+    public String getAnno() {
+        return anno;
+    }
+
+    public void setAnno(String anno) {
+        this.anno = anno;
     }
 }

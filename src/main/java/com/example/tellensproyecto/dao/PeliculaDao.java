@@ -20,8 +20,8 @@ public class PeliculaDao {
         try {
             String consulta = "insert into pelicula(nombre,precio, tipo) values (?, ?, ?)";
             PreparedStatement stm1 = connection.prepareStatement(consulta);
-            stm1.setString(1, pelicula.getNombre());
-            stm1.setString(2, pelicula.getTipo());  //Para evitar sql inyection
+            stm1.setString(1, pelicula.getTitulo());
+            stm1.setString(2, pelicula.getGenero());  //Para evitar sql inyection
             stm1.setDouble(3, pelicula.getPrecio());
             stm1.execute();
             return true;
@@ -44,9 +44,9 @@ public class PeliculaDao {
             ArrayList<Pelicula> listaPeliculas = new ArrayList();
             while(rs.next()){
                 Pelicula pelicula = new Pelicula();
-                pelicula.setNombre(rs.getString("nombre")); //REVISAR SI SE LLAMA NOMBRE O NAME
-                pelicula.setPrecio(rs.getDouble("precio"));
-                pelicula.setTipo(rs.getString("tipo"));
+                pelicula.setTitulo(rs.getString("nombre")); //REVISAR SI SE LLAMA NOMBRE O NAME
+                pelicula.setPrecio(rs.getInt("precio"));
+                pelicula.setGenero(rs.getString("tipo"));
                 listaPeliculas.add(pelicula);
             }
             return listaPeliculas;
