@@ -7,21 +7,20 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
     <link rel="stylesheet" href="css/estiloFooter.css">
+    <link rel="stylesheet" href="css/estiloNav.css">
     <title>Inicio</title>
 </head>
 <body>
-<h1>HOLA</h1>
-<table border="0" width="1000" align="center">
-    <tr bgcolor="#87ceeb">
-        <th><a href="index.jsp">HOLA</a></th>
-        <th><a href="index.jsp"> Registra productos</a></th>
-        <th><a href="index.jsp">Registra Venta</a> </th>
-        <th><a methods="POST" action="LogOutServlet">Cerrar sesión</a></th>
-        <th width="200"></th>
-    </tr>
-</table>
-<div>
+<div id="nav-placeholder">
+</div>
 
+<script>
+    $(function(){
+        $("#nav-placeholder").load("Nav.jsp");
+    });
+</script>
+<div>
+<table id="tabla" border="0" align="center" width="1000">
     <%
         PeliculaDB peliculaDB = new PeliculaDB();
         ArrayList<Pelicula> lista = peliculaDB.getAllProductos();
@@ -29,14 +28,25 @@
         for(Pelicula p : lista){
     %>
 
-    <img src="img/<%=p.getImagen()%>" width="140" height="140"><p>
+   <th><img src="img/<%=p.getImagen()%>" width="140" height="140"><p>
     <%=p.getTitulo()%><br>
     <%=p.getPrecio()%></p>
     <a href="">Añadir</a>
     <a href="">Modificar</a>
+   </th>
     <%
+            salto++;
+            if(salto == 3){
+    %>
+            <tr>
+    <%
+            salto=0;
+            }
         }
     %>
+</table>
+
 </div>
 </body>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </html>
