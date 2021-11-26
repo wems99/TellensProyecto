@@ -1,13 +1,13 @@
 package com.example.tellensproyecto.entities;
 
-import com.example.tellensproyecto.entities.Pelicula;
+
 import com.example.tellensproyecto.utils.Conexion;
 
 import java.sql.*;
 import java.util.ArrayList;
 
 
-public class PeliculaDB extends Conexion{
+public class PeliculaDB extends Conexion {
 
     public ArrayList<Pelicula> getAllProductos(){
         ArrayList<Pelicula> productos = new ArrayList<>();
@@ -37,5 +37,17 @@ public class PeliculaDB extends Conexion{
         }
         return productos;
     }
+    public void agregar(int cod,String nom,String descr,String gen, String dir, String an,int preci,String img){
+        try {
+           Connection con = getConnection();
+           Statement st = con.createStatement();
+            String query = " INSERT INTO pelicula (idPelicula,titulo,descripcion,genero,director,anno,precio,imagen) VALUES(cod,'nom','desc','gen','dir','an','preci','img')";
+            st.executeUpdate(query);
+            System.out.println("Una nueva pelicula fue ingresada");
 
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
 }

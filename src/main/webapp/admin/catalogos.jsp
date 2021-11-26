@@ -32,6 +32,7 @@
         });
     </script>
 </nav>
+
 <p id="linea"></p>
 <h2 class="fuente">Populares</h2>
 <div id="divPopulares">

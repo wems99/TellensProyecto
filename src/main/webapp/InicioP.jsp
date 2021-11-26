@@ -8,6 +8,8 @@
     <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
     <link rel="stylesheet" href="css/estiloFooter.css">
     <link rel="stylesheet" href="css/estiloNav.css">
+    <link rel="stylesheet" href="css/estiloCatalog.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Inicio</title>
 </head>
 <body>
@@ -31,7 +33,7 @@
    <th><img src="img/<%=p.getImagen()%>" width="140" height="140"><p>
     <%=p.getTitulo()%><br>
     <%=p.getPrecio()%></p>
-    <a href="">Añadir</a>
+    <a href="anadirCarrito.jsp?id=<%=p.getIdPelicula()%>">Añadir</a>
     <a href="">Modificar</a>
    </th>
     <%
@@ -48,5 +50,4 @@
 
 </div>
 </body>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </html>

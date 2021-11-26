@@ -67,7 +67,7 @@
 
             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
         </div>
-        <form id="contact-us" method="post" action="#" onsubmit="return miFuncion(this)">
+        <form id="contact-us" method="post" action="annadirCarritoServlet" onsubmit="return miFuncion(this)">
             <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
                 <input type="text" name="name" id="name" required="required" class="form" placeholder="Nombre" />
                 <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Correo" onchange="compruebaCorreo(this.value);" />

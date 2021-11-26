@@ -1,6 +1,7 @@
 package com.example.tellensproyecto.ui;
 
 import com.example.tellensproyecto.entities.Pelicula;
+import com.example.tellensproyecto.entities.PeliculaDB;
 import com.example.tellensproyecto.services.PeliculaService;
 import com.example.tellensproyecto.services.PeliculaServiceImpl;
 
@@ -52,4 +53,5 @@ public class PeliculaServlet extends HttpServlet {
             System.out.println(e.getMessage());
         }
     }
+
 }

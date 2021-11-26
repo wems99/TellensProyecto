@@ -131,3 +131,6 @@ textarea {
     border-radius: 10px;
     margin-left: 18px;
 }
+table a{
+    color: black !important;
+}
