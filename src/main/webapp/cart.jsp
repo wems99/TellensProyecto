@@ -10,6 +10,7 @@
 <%@ page import="com.example.tellensproyecto.controllers.ControladorPelicula" %>
 <%@ page import="com.example.tellensproyecto.entities.Pelicula" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
 <%
     HttpSession sessions= request.getSession(true);
     ArrayList<Articulo> articulos = sessions.getAttribute("carrito") == null ? null : (ArrayList) sessions.getAttribute("carrito");
@@ -62,10 +63,10 @@
             <table class="table table-condensed">
                 <thead>
                 <tr class="cart_menu">
-                    <td class="image">Item</td>
+                    <td class="image">Pelicula</td>
                     <td class="description"></td>
-                    <td class="price">Price</td>
-                    <td class="quantity">Quantity</td>
+                    <td class="price">Precio</td>
+                    <td class="quantity">Cantidad</td>
                     <td class="total">Total</td>
                     <td></td>
                 </tr>
@@ -83,7 +84,7 @@
                 %>
                 <tr>
                     <td class="cart_product">
-                        <a href=""><img src="img/<%=pelicula.getImagen()%>" width="140" height="140" alt=""></a>
+                        <a href=""><img src="https://image.tmdb.org/t/p/original/<%=pelicula.getImagen()%>" width="140" height="177.5" alt="" /></a>
                     </td>
                     <td class="cart_description">
                         <h4><a href=""><%=pelicula.getTitulo()%></a></h4>
@@ -100,9 +101,9 @@
                     <td class="cart_total">
                         <p class="cart_total_price">₡<%=Math.round(pelicula.getPrecio()* a.getCantidad()*100.0)/100.0%></p>
                     </td>
-                    <td class="cart_delete">
+                    <td class="comprar">
                         <span id="idArticulo" style="display: none"><%=pelicula.getIdPelicula()%></span>
-                        <a class="cart_quantity_delete" href="" id="borraItem" ><i class="fa fa-times"></i></a>
+                        <a class="cart_quantity_delete" href="" id="comprar" >Comprar</a>
                     </td>
                 </tr>
 

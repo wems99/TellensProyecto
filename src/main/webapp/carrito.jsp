@@ -1,4 +1,4 @@
-<%@page import="com.example.tellensproyecto.entities.ControladorPelicula"%>
+<%@page import="com.example.tellensproyecto.controllers.ControladorPelicula"%>
 <%@page import="com.example.tellensproyecto.entities.Pelicula"%>
 <%@ page import="com.example.tellensproyecto.controllers.ControladorPelicula" %>
 <%

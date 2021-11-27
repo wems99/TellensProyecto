@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Product Details | E-Shopper</title>
+    <title>Detalles pelicula</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/estiloFooter.css" rel="stylesheet">
@@ -57,7 +57,8 @@
 					<div class="product-details"><!--product-details-->
 						<div class="col-sm-5">
 							<div class="view-product">
-								<img src="img/<%=pelicula.getImagen()%>" alt="" />
+								<img src="https://image.tmdb.org/t/p/original/<%=pelicula.getImagen()%>" alt="" />
+
 							</div>
 
 

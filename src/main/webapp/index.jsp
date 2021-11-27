@@ -21,7 +21,7 @@
     <title>Tellen's Cinema</title>
 </head>
 
-<body>
+<body onload="getMovies();">
 
 <div  class="contLogOut" style="display:none;" >
     <span>Bienvenido ${sessionScope.usuario.nombreUsuario}</span>
@@ -36,6 +36,8 @@
         });
     </script>
 </nav>
+
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -156,6 +158,7 @@
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="js/funtion.js "></script>
+
+<script src="js/funcionHome.js "></script>
 
 </html>
