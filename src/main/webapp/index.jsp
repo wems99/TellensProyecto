@@ -23,9 +23,9 @@
 
 <body onload="getMovies();">
 
-<div  class="contLogOut" style="display:none;" >
+<div  class="contLogOut" >
     <span>Bienvenido ${sessionScope.usuario.nombreUsuario}</span>
-    <a class="logOut" href="../LogOutServlet">Cerrar sesión</a>
+    <a class="logOut" href="LogOutServlet">Cerrar sesión</a>
 </div>
 <nav>
     <div id="nav-placeholder">

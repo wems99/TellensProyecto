@@ -25,6 +25,8 @@
 </head>
 
 <body>
+<!--sidebar start-->
+<!--sidebar end-->
     <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light fuente fondo">
         <div id="contentNav">
             <img id="logo" src="img/logo.png" alt="">
@@ -65,8 +67,8 @@
                 <form id="busca" class="form-inline my-2 ">
                     <input id="buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
                     <a href="" class="fas fa-search"></a>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="button">Registrarse</button>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="window.location.href='login.jsp'">Ingresar</button>
+                    <button id="btnRegistrarse" name="btnRegistrase" class="btn btn-outline-success my-2 my-sm-0" type="button">Registrarse</button>
+                    <button id="btnIngresar" name="btnIngresar" class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="window.location.href='login.jsp'">Ingresar</button>
                 </form>
             </div>
         </div>
