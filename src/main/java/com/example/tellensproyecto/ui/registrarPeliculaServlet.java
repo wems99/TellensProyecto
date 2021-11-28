@@ -34,7 +34,8 @@ public class registrarPeliculaServlet extends HttpServlet {
             pelicula.setAnno(request.getParameter("txtAnno"));
             pelicula.setPrecio(Integer.parseInt(request.getParameter("txtTitulo")));
             pelicula.setImagen(request.getParameter("txtImagen"));
-         //   boolean respuesta = PeliculaDB.insertarPelicula(pelicula);
+            PeliculaDB peliculaDB = new PeliculaDB();
+          // boolean respuesta = peliculaDB.agregar(pelicula);
            // if(respuesta){
             //    response.sendRedirect("mensaje.jsp?men=Se registro con exito");
             //}else{
