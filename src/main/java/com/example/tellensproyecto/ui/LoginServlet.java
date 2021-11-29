@@ -8,6 +8,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Optional;
 
 @WebServlet(name = "LoginServlet", value = "/LoginServlet")
@@ -31,7 +32,7 @@ public class LoginServlet extends HttpServlet {
                 Usuario usuario = new Usuario();
                 usuario.setNombreUsuario(user);
                 usuario.setPassword(password);
-
+                usuario.setActivo(1);
                 LoginService loginService = new LoginServiceImpl();
                 usuario = loginService.login(usuario);
 
@@ -45,12 +46,14 @@ public class LoginServlet extends HttpServlet {
 
                     HttpSession session = request.getSession(true);
                     session.setMaxInactiveInterval(5*60);
-
                     Cookie message = new Cookie("mensaje", "Bienvenido");
                     response.addCookie(message);
-
                     session.setAttribute("usuario", usuario);
+                    if(usuario.getTipoUsuario() == 0){
                     response.sendRedirect("index.jsp");
+                    }else if(usuario.getTipoUsuario() ==1){
+                        response.sendRedirect("admin/administrativo.jsp");
+                    }
                 }else{
                     throw new Exception("Login Incorrecto");
                 }

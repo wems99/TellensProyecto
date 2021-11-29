@@ -11,11 +11,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estiloCat.css">
-    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Tellens Catálogo</title>
 </head>
 <body>
-
+<nav>
+    <div id="nav-placeholder">
+    </div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("Nav.jsp");
+        });
+    </script>
+</nav>
 <div id="tags"></div>
 <div id="myNav" class="overlay">
 
@@ -37,7 +47,22 @@
     <div class="page" id="next">Next Page</div>
 
 </div>
-
+<footer id="footer">
+    <div id="cuadrosFooter">
+        <p id="primerCuadro" class="fuente"><a href="">Preguntas frecuentes</a></p>
+        <p class="fuente"><a href="">Contacto</a></p>
+        <p class="fuente"> <a href="">Canjear código</a></p>
+        <p class="fuente"> <a href="">Aviso legal</a></p>
+        <p class="fuente"><a href="">Prensa</a></p>
+    </div>
+    <div id="iconos">
+        <i class="fab fa-facebook-square icono"></i>
+        <i class="fab fa-instagram icono"></i>
+        <i class="fab fa-twitter icono"></i>
+        <i class="fab fa-pinterest-square icono"></i>
+        <i class="fab fa-invision icono"></i>
+    </div>
+</footer>
 <script src="js/API.js"></script>
 </body>
 </html>

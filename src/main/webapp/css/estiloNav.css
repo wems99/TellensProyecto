@@ -7,6 +7,18 @@
     height: 96px !important;
     display: flex;
 
+
+}
+.contLogOut{
+    background-color: black !important;
+    font-family: 'Unna', serif;
+    font-size: 17px;
+    padding-left: 76%;
+    color: white;
+    margin-top: 5px;
+}
+.contLogOut a{
+    color: whitesmoke;
 }
 iframe{
     width: 100%;

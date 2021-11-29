@@ -27,6 +27,11 @@
 <body>
 <!--sidebar start-->
 <!--sidebar end-->
+
+<div  class="contLogOut"  >
+    <span>Bienvenido ${sessionScope.usuario.nombreUsuario}</span>
+    <a class="logOut" href="LogOutServlet">Cerrar sesión</a>
+</div>
     <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light fuente fondo">
         <div id="contentNav">
             <img id="logo" src="img/logo.png" alt="">

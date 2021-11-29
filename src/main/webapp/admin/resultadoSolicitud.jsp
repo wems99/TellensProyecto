@@ -29,10 +29,7 @@
 </head>
 
 <body>
-<div  class="contLogOut" >
-    <span>Bienvenido ${sessionScope.usuario.nombreUsuario}</span>
-    <a class="logOut" href="LogOutServlet">Cerrar sesión</a>
-</div>
+
 <nav>
 
     <div id="nav-placeholder">

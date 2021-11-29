@@ -8,6 +8,8 @@ public class Usuario {
     private String fechaCreacion;
     private String nombre;
     private String ultimoLogueo;
+    private int activo;
+
 
 
     public Usuario() {
@@ -77,5 +79,12 @@ public class Usuario {
 
     public void setUltimoLogueo(String ultimoLogueo) {
         this.ultimoLogueo = ultimoLogueo;
+    }
+    public int getActivo() {
+        return activo;
+    }
+
+    public void setActivo(int activo) {
+        this.activo = activo;
     }
 }

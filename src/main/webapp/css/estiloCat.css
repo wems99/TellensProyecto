@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{
+    display: flex !important;
+}
 *{
     box-sizing: border-box;
 }
-
+div#nav-placeholder{
+    width: 100% !important;
+}
 :root{
     --primary-color:#22254b;
     --secondary-color: #373b69;
@@ -43,7 +48,7 @@ header{
 }
 
 main{
-    display:flex;
+
     flex-wrap: wrap;
     justify-content: center;
 }
