@@ -30,12 +30,8 @@ public class PeliculaDao {
             System.out.println("Error:" + ex.fillInStackTrace());
             return false;
         }
-
     }
 
-    //metodo para buscar
-
-    //metodo para traer todos los registros
     public ArrayList<Pelicula> mostrarTodos(){
         try {
             String consulta = "select * from producto";
@@ -44,7 +40,7 @@ public class PeliculaDao {
             ArrayList<Pelicula> listaPeliculas = new ArrayList();
             while(rs.next()){
                 Pelicula pelicula = new Pelicula();
-                pelicula.setTitulo(rs.getString("nombre")); //REVISAR SI SE LLAMA NOMBRE O NAME
+                pelicula.setTitulo(rs.getString("nombre"));
                 pelicula.setPrecio(rs.getInt("precio"));
                 pelicula.setGenero(rs.getString("tipo"));
                 listaPeliculas.add(pelicula);
@@ -57,10 +53,5 @@ public class PeliculaDao {
         }
 
     }
-
-    //metodo para actualizar
-
-    //metodo para borrar (fisico o logico)
-
 
 }

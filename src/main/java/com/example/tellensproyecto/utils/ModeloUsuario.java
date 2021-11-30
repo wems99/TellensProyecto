@@ -75,6 +75,4 @@ public class ModeloUsuario extends Conexion{
         return respuesta;
     }
 
-
-
 }

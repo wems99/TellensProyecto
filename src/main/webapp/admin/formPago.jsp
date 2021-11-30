@@ -13,8 +13,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estiloFormPago.css">
-    <link rel="stylesheet" href="css/estiloNav.css">
+    <link rel="stylesheet" href="../css/estiloFormPago.css">
+    <link rel="stylesheet" href="../css/estiloNav.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,8 +39,6 @@
 <div class="row">
     <div class="col-75">
         <div class="container">
-            <form action="/action_page.php">
-
 
                 <div class="col-50">
                     <h3>Datos de pago</h3>
@@ -57,7 +55,6 @@
                     <label for="expmonth">Fecha de vencimiento de la tarjeta</label>
                     <input type="text" id="expmonth" name="expmonth" placeholder="September">
 
-
                     <div class="row">
                         <div class="col-50">
                             <label for="expyear">Año de vencimiento</label>
@@ -72,31 +69,13 @@
                     <input type="text" id="direccion" name="direccion" placeholder="Avenidad 10">
                 </div>
                 <label>
-                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                    <input type="checkbox" checked="checked" name="sameadr">Dirección de envío igual a la de facturación
                 </label>
-                <input type="submit" value="Continue to checkout" class="btn">
-            </form>
+                <input type="submit" value="Continuar" class="btn">
         </div>
-
     </div>
 </div>
 
-<div class="col-25">
-    <div class="container">
-        <h4>Cart
-            <span class="price" style="color:black">
-                    <i class="fa fa-shopping-cart"></i>
-                    <b>4</b>
-                  </span>
-        </h4>
-        <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-        <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-        <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-        <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-        <hr>
-        <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-    </div>
-</div>
 </div>
 </body>
 

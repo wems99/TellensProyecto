@@ -88,8 +88,5 @@ public class ModeloProducto extends Conexion {
             }
         }
         return pelicula;
-
     }
-
-
 }

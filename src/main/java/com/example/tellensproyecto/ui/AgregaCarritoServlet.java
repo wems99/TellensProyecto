@@ -13,7 +13,6 @@ public class AgregaCarritoServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int cant = Integer.parseInt(request.getParameter("txtCantidad"));
@@ -36,6 +35,6 @@ public class AgregaCarritoServlet extends HttpServlet {
             articulos.add(new Articulo(id,cant));
         }
         session.setAttribute("carrito", articulos);
-        response.sendRedirect("cart.jsp");
+        response.sendRedirect("admin/cart.jsp");
     }
 }

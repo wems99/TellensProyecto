@@ -8,7 +8,6 @@ public class Articulo {
         this.idPelicula = idPelicula;
         this.cantidad = cantidad;
     }
-
     public int getIdPelicula() {
         return idPelicula;
     }

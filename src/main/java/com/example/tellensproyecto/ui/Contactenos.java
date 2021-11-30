@@ -22,7 +22,6 @@ public class Contactenos extends HttpServlet {
         mensaje = request.getParameter("message");
         tarjeta = request.getParameter("tarjeta");
 
-
         request.setAttribute("name_input", nombre);
         request.setAttribute("email_input", correo);
         request.setAttribute("telephone_input", telefono);

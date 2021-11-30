@@ -24,14 +24,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Carrito de compras</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/estiloFooter.css" rel="stylesheet">
-    <link href="css/estiloNav.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prettyPhoto.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/estiloFooter.css" rel="stylesheet">
+    <link href="../css/estiloNav.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -50,7 +50,7 @@
     </div>
     <script>
         $(function(){
-            $("#nav-placeholder").load("Nav.jsp");
+            $("#nav-placeholder").load("../Nav.jsp");
         });
     </script>
 </nav>
@@ -103,7 +103,7 @@
                     </td>
                     <td class="comprar">
                         <span id="idArticulo" style="display: none"><%=pelicula.getIdPelicula()%></span>
-                        <a class="cart_quantity_delete" href="" id="comprar" >Comprar</a>
+                        <a class="cart_quantity_delete" href="formPago.jsp" id="comprar" >Comprar</a>
                     </td>
                 </tr>
 

@@ -26,7 +26,6 @@ public class PeliculaDB extends Conexion {
                                         rs.getInt(7),rs.getString(8)));
             }
         } catch (Exception e) {
-
         } finally{
             try {
                 if(rs != null) rs.close();
@@ -37,13 +36,13 @@ public class PeliculaDB extends Conexion {
         }
         return productos;
     }
+
     public void agregar(int cod,String nom,String descr,String gen, String dir, String an,int preci,String img){
         try {
            Connection con = getConnection();
            Statement st = con.createStatement();
            String query= String.format("INSERT INTO `tellens`.`pelicula` (`codigoPelicula`, `titulo`, `descripcion`, `genero`, `director`, `anno`, `precio`, `imagen`) VALUES ('%d', '%s', '%s', '%s', '%s', '%s', '%d', '%s');",cod,nom,descr,gen,dir,an,preci,img);
            st.executeUpdate(query);
-
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();

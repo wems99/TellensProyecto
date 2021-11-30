@@ -49,7 +49,6 @@ public class ControladorPelicula {
         return html;
     }
 
-
     public Pelicula getProducto(int id){
         return new ModeloProducto().getProducto(id);
     }

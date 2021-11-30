@@ -58,7 +58,6 @@ public class LoginServlet extends HttpServlet {
                 }else{
                     throw new Exception("Login Incorrecto");
                 }
-
             }else{
                 throw new Exception("Login Incorrecto");
             }

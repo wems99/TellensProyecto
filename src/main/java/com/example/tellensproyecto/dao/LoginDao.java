@@ -26,10 +26,8 @@ public class LoginDao {
                 usu.setUltimoLogueo(rs.getDate("ultimoLogueo"));
 
             }
-
         } catch (Exception e)
         {
-            //throw e;
             throw new Exception("Ha ocurrido un error");
         }
         return usu;

@@ -37,6 +37,5 @@ public class Datos extends HttpServlet {
         peliculaDB.agregar(id,titulo,"S/D","Populares",titulo,ann,precio,img);
 
         request.getRequestDispatcher("product-details.jsp").forward(request, response);
-
     }
 }

@@ -15,8 +15,6 @@ public class Pelicula {
     private int precio;
     private String imagen;
 
-
-
     public Pelicula() {
     }
 

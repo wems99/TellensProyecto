@@ -6,7 +6,6 @@ import com.example.tellensproyecto.entities.Usuario;
 public class LoginServiceImpl implements LoginService {
 
     private LoginDao loginDao;
-
     public LoginServiceImpl() {
         loginDao = new LoginDao();
     }
