@@ -1,55 +1,64 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: teres
-  Date: 21/11/2021
-  Time: 04:46 p. m.
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.PreparedStatement" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="com.example.tellensproyecto.utils.Conexion" %>
+<%@ page import="com.example.tellensproyecto.controllers.ControladorUsuario" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html lang="en">
+<%
+    ControladorUsuario controladorUsuario = new ControladorUsuario();
 
+%>
+<!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estiloFormModifUsu.css">
-    <link rel="stylesheet" href="css/estiloNav.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <title>Mantenimiento de usuario</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <title>JSP Page</title>
 </head>
-
 <body>
+<%
+    Connection con = Conexion.getConnection();
+    PreparedStatement ps;
+    ResultSet rs;
+    int id=Integer.parseInt(request.getParameter("id"));
+    ps=con.prepareStatement("select * from usuario where id="+id);
+    rs=ps.executeQuery();
+    while(rs.next()){
+%>
+<div class="container">
+    <h1>Modificar Registro</h1>
+    <hr>
+    <form action="" method="post" class="form-control" style="width: 500px; height: 400px">
+        ID:
+        <input type="text" readonly="" class="form-control" value="<%= rs.getInt("id")%>"/>
+        Nombre:
+        <input type="text" name="txtNom" class="form-control" value="<%= rs.getString("nombre")%>"/><br>
+        Tipo de usuario:
+        <input type="text" name="txtTipo" class="form-control" value="<%= rs.getString("tipoUsuario")%>"/>
+        <br>
+        <input type="submit" value="Guardar" class="btn btn-primary btn-lg"/>
 
-<nav>
-    <div id="nav-placeholder">
-    </div>
-    <script>
-        $(function(){
-            $("#nav-placeholder").load("Nav.jsp");
-        });
-    </script>
-</nav>
-<div class="form">
-    <h1>
-        Rellene los campos que desea cambiar
-    </h1>
-    <form id="contactform">
-        <p class="contact"><label for="nombreUsuario">Nombre de usuario</label></p>
-        <input id="name" name="name" placeholder="Nombre de usuario" tabindex="1" type="text">
-
-        <p class="contact"><label for="tipoUsuario">Tipo de usuario</label></p>
-        <input id="tipoUsuario" name="tipoUsuario" placeholder="Tipo de usuario" tabindex="1" type="text">
-
-        <input class="buttom" name="submit" id="submit" tabindex="5" value="Guardar cambios" type="submit">
+        <a href="index.jsp">Regresar</a>
     </form>
+    <%}%>
 </div>
-
 </body>
-
+<%
+    String nom, tipo;
+    tipo=request.getParameter("txtTipo");
+    nom=request.getParameter("txtNom");
+    if(nom!=null && tipo!=null){
+        ps=con.prepareStatement("update usuario set nombre='"+nom+"', tipoUsuario='"+tipo+"'where id="+id);
+        ps.executeUpdate();
+        response.sendRedirect("MantenimientoUsuario.jsp");
+    } else if(nom != null ){
+        ps=con.prepareStatement("update usuario set nombre='"+nom +"'where id="+id);
+        ps.executeUpdate();
+        response.sendRedirect("MantenimientoUsuario.jsp");
+    }else if(tipo != null){
+        ps=con.prepareStatement("update usuario set tipoUsuario='"+tipo +"'where id="+id);
+        ps.executeUpdate();
+        response.sendRedirect("MantenimientoUsuario.jsp");
+    }
+%>
 </html>

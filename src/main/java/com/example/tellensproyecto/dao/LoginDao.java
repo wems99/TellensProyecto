@@ -20,10 +20,10 @@ public class LoginDao {
             rs= ps.executeQuery();
             if (rs.next()) {
                 usu.setNombreUsuario(rs.getString("nombreUsuario"));
+                usu.setFechaCreacion(rs.getDate("fechaCreacion"));
                 usu.setTipoUsuario(rs.getInt("tipoUsuario"));
                 usu.setNombre(rs.getString("nombre"));
-                usu.setFechaCreacion(rs.getString("fechaCreacion"));
-                usu.setUltimoLogueo(rs.getString("ultimoLogueo"));
+                usu.setUltimoLogueo(rs.getDate("ultimoLogueo"));
 
             }
 

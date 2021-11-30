@@ -1,26 +1,26 @@
 package com.example.tellensproyecto.entities;
 
+import java.sql.Date;
+
 public class Usuario {
     private int id;
     private String nombreUsuario;
-    private String password;
+    private Date fechaCreacion;
     private Integer tipoUsuario;
-    private String fechaCreacion;
+    private String password;
     private String nombre;
-    private String ultimoLogueo;
-    private int activo;
-
+    private Date ultimoLogueo;
 
 
     public Usuario() {
     }
 
-    public Usuario(int id, String nombreUsuario, String password, Integer tipoUsuario, String fechaCreacion, String nombre, String ultimoLogueo) {
+    public Usuario(int id, String nombreUsuario, Date fechaCreacion, Integer tipoUsuario, String password, String nombre, Date ultimoLogueo) {
         this.id = id;
         this.nombreUsuario = nombreUsuario;
-        this.password = password;
-        this.tipoUsuario = tipoUsuario;
         this.fechaCreacion = fechaCreacion;
+        this.tipoUsuario = tipoUsuario;
+        this.password = password;
         this.nombre = nombre;
         this.ultimoLogueo = ultimoLogueo;
     }
@@ -57,13 +57,6 @@ public class Usuario {
         this.tipoUsuario = tipoUsuario;
     }
 
-    public String getFechaCreacion() {
-        return fechaCreacion;
-    }
-
-    public void setFechaCreacion(String fechaCreacion) {
-        this.fechaCreacion = fechaCreacion;
-    }
 
     public String getNombre() {
         return nombre;
@@ -73,18 +66,19 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public String getUltimoLogueo() {
+    public Date getFechaCreacion() {
+        return fechaCreacion;
+    }
+
+    public void setFechaCreacion(Date fechaCreacion) {
+        this.fechaCreacion = fechaCreacion;
+    }
+
+    public Date getUltimoLogueo() {
         return ultimoLogueo;
     }
 
-    public void setUltimoLogueo(String ultimoLogueo) {
+    public void setUltimoLogueo(Date ultimoLogueo) {
         this.ultimoLogueo = ultimoLogueo;
-    }
-    public int getActivo() {
-        return activo;
-    }
-
-    public void setActivo(int activo) {
-        this.activo = activo;
     }
 }

@@ -6,6 +6,13 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="com.example.tellensproyecto.controllers.ControladorPelicula" %>
+<%@ page import="com.example.tellensproyecto.controllers.ControladorUsuario" %>
+<%
+   ControladorPelicula controladorPelicula =new ControladorPelicula();
+   ControladorUsuario controladorUsuario = new ControladorUsuario();
+
+%>
 <html lang="en">
 
 <head>
@@ -41,11 +48,20 @@
 </h1>
 <div class="divOpciones">
     <div class="separa">
-        <a href="opcManPeli.jsp">Mantenimiento de películas</a>
+        <a href="mantenimientoPel.jsp">Mantenimiento de películas</a>
 
     </div>
     <div class="separa">
-        <a href="opcionManteUsu.jsp">Mantenimiento de usuarios</a>
+        <a href="MantenimientoUsu.jsp">Mantenimiento de usuarios</a>
+    </div>
+    <div class="separa">
+        <a href="../index.jsp" >Navegar como un usuario convencional </a>
+    </div>
+    <div class="separa">
+        <a href="agregarUsuario.jsp" >Agregar Usuario </a>
+    </div>
+    <div class="separa">
+        <a href="agregarPelicula.jsp" >Agregar Pelicula  </a>
     </div>
     <div class="separa">
         <a href="../index.jsp" >Navegar como un usuario convencional </a>

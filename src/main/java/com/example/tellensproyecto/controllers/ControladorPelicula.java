@@ -6,37 +6,47 @@ import utils.ModeloProducto;
 
 public class ControladorPelicula {
 
-    public String getProductos(){
+    public String getPeliculas(){
         ModeloProducto mp = new ModeloProducto();
-        String htmlcode = "";
-        for(Pelicula ppelicula : mp.getAllProductos()){
-            htmlcode += "<div class=\"col-sm-4\">\n" +
-                    "							<div class=\"product-image-wrapper\">\n" +
-                    "								<div class=\"single-products\">\n" +
-                    "									<div class=\"productinfo text-center\">\n" +
-                    "										<img src=\"img/"+ppelicula.getImagen()+"\" alt=\"\" />\n" +
-                    "										<h2>$"+ppelicula.getPrecio()+"</h2>\n" +
-                    "										<p>"+ppelicula.getTitulo()+"</p>\n" +
-                    "										<a href=\"product-details.jsp?id="+ppelicula.getIdPelicula()+"\" class=\"btn btn-default add-to-cart\"><i class=\"fa fa-shopping-cart\"></i>Ver detalles</a>\n" +
-                    "									</div>\n" +
-                    "									<div class=\"product-overlay\">\n" +
-                    "										<div class=\"overlay-content\">\n" +
-                    "											<h2>$"+ppelicula.getPrecio()+"</h2>\n" +
-                    "											<p>"+ppelicula.getTitulo()+"</p>\n" +
-                    "											<a href=\"product-details.jsp?id="+ppelicula.getIdPelicula()+"\" class=\"btn btn-default add-to-cart\"><i class=\"fa fa-shopping-cart\"></i>Ver Detalles</a>\n" +
-                    "										</div>\n" +
-                    "									</div>\n" +
-                    "								</div>\n" +
-                    "								<div class=\"choose\">\n" +
-                    "									<ul class=\"nav nav-pills nav-justified\">\n" +
-                    "										<li><a href=\"\"><i class=\"fa fa-plus-square\"></i>Add to wishlist</a></li>\n" +
-                    "										<li><a href=\"\"><i class=\"fa fa-plus-square\"></i>Add to compare</a></li>\n" +
-                    "									</ul>\n" +
-                    "								</div>\n" +
-                    "							</div>\n" +
-                    "						</div>";
+        String html="";
+
+        for(Pelicula pelicula : mp.getAllProductos()){
+            html +="  <div>               \n" +
+                    "             <table class=\"table table-bordered\"  id=\"tablaDatos\">\n" +
+                    "                    <thead>\n" +
+                    "                        <tr>\n" +
+                    "                            <th>ID</th>\n" +
+                    "                           <th class=\"text-center\">Título</th>\n" +
+                    "                            <th class=\"text-center\">Descipción</th>\n" +
+                    "                           <th class=\"text-center\">Género</th>\n" +
+                    "                           <th class=\"text-center\">Director</th>\n" +
+                    "                           <th class=\"text-center\">Año</th>\n" +
+                    "                           <th class=\"text-center\">Precio</th>\n" +
+                    "                        </tr>\n" +
+                    "                    </thead>\n" +
+                    "                    <tbody id=\"tbodys\">\n" +
+                    "                        <tr>\n" +
+                    "                               <td class=\"text-center\">"+pelicula.getIdPelicula()+"</td>\n" +
+                    "                            <td>"+pelicula.getTitulo()+"</td>\n" +
+                    "                            <td class=\"text-center\">"+pelicula.getDescripcion() +
+                    "                             <td class=\"text-center\">"+pelicula.getGenero() +
+                    "                            <td class=\"text-center\">\n" +pelicula.getDirector()+
+                    "                                \n" +
+                    "                               <td class=\"text-center\">\n" +pelicula.getAnno()+
+                    "                                <td class=\"text-center\">\n" +pelicula.getPrecio()+
+                    "                                 <td class=\"text-center\">\n" +
+                    "                                \n" +
+                    "                                <!-- <input type=\"hidden\" value=\"<//%= rs.getInt(\"Id_Usuario\")%>\" id=\"Editar\"/>\n" +
+                    "                                <input type=\"submit\" class=\"btn btn-warning\" data-toggle=\"modal\" data-target=\"#myModal1\" value=\"Editar\"/>  -->\n" +
+                    "                                <a href=\"formModPelicula.jsp?id="+pelicula.getIdPelicula()+ "\" class=\"btn btn-primary\">Editar</a>\n" +
+                    "                                <a href=\"eliminaPelicula.jsp?id="+pelicula.getIdPelicula()+ "\" class=\"btn btn-danger\">Eliminar</a>\n" +
+                    "                            </td> </td>\n" +
+                    "                        </tr>\n" +
+                    "                </table>\n" +
+                    "            </div>       ";
+
         }
-        return htmlcode;
+        return html;
     }
 
 

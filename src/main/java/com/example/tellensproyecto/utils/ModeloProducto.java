@@ -91,29 +91,5 @@ public class ModeloProducto extends Conexion {
 
     }
 
-    public static boolean insertarPelicula(Pelicula pelicula){
-        boolean respuesta = false;
-        try {
-            CallableStatement cl = getConnection().prepareCall("{call insertarPelicula(?,?,?,?,?,?,?,?)}");
-            cl.registerOutParameter(1, Types.INTEGER );
-            cl.setString(2,pelicula.getTitulo());
-            cl.setString(3,pelicula.getDescripcion());
-            cl.setString(4,pelicula.getGenero());
-            cl.setString(5,pelicula.getDirector());
-            cl.setString(6,pelicula.getAnno());
-            cl.setInt(7,pelicula.getPrecio());
-            cl.setString(8,pelicula.getImagen());
-            int i = cl.executeUpdate();
-            if(i==1){
-                respuesta = true;
-            }else{
-                respuesta=false;
-            }
-        }catch (Exception e){
-            System.out.println(e);
-        };
-        return respuesta;
-    }
-
 
 }

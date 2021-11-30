@@ -20,6 +20,7 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String html;
         System.out.println("Seteamos una variable de aplicación");
         ServletContext aplicacion = request.getServletContext();
         aplicacion.setAttribute("variableAplicacion", "aplicacionWeb");
@@ -32,7 +33,6 @@ public class LoginServlet extends HttpServlet {
                 Usuario usuario = new Usuario();
                 usuario.setNombreUsuario(user);
                 usuario.setPassword(password);
-                usuario.setActivo(1);
                 LoginService loginService = new LoginServiceImpl();
                 usuario = loginService.login(usuario);
 
@@ -45,6 +45,7 @@ public class LoginServlet extends HttpServlet {
                     }
 
                     HttpSession session = request.getSession(true);
+
                     session.setMaxInactiveInterval(5*60);
                     Cookie message = new Cookie("mensaje", "Bienvenido");
                     response.addCookie(message);
@@ -66,6 +67,6 @@ public class LoginServlet extends HttpServlet {
             request.setAttribute("error", e.getMessage());
             request.getRequestDispatcher("Error.jsp").forward(request, response);
         }
-
     }
+
 }

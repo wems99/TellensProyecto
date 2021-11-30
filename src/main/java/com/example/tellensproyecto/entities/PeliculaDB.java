@@ -43,7 +43,6 @@ public class PeliculaDB extends Conexion {
            Statement st = con.createStatement();
            String query= String.format("INSERT INTO `tellens`.`pelicula` (`codigoPelicula`, `titulo`, `descripcion`, `genero`, `director`, `anno`, `precio`, `imagen`) VALUES ('%d', '%s', '%s', '%s', '%s', '%s', '%d', '%s');",cod,nom,descr,gen,dir,an,preci,img);
            st.executeUpdate(query);
-            System.out.println("Una nueva pelicula fue ingresada");
 
 
         } catch (SQLException throwables) {

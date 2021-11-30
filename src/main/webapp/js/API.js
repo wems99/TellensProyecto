@@ -216,7 +216,7 @@ function showMovies(data) {
             </div>
             <div >
              
-            <a href="product-details.jsp?id=${id}">AVER</a>
+            <a href="product-details.jsp?id=${id}">Agregar al carrito</a>
              <button style="display: none" class="know-more" id="${id}">Know More</button
               
             </div>
