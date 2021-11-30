@@ -32,5 +32,4 @@ public class LoginDao {
         }
         return usu;
     }
-
 }

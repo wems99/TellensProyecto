@@ -43,6 +43,7 @@ public class ControladorUsuario {
         }
         return html;
     }
+
     public Usuario getUsuario(int id){
         return new ModeloUsuario().obtenerUsuario(id);
     }
