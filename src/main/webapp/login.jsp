@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
 <div class="login">
     <h1>Login</h1>
     <form method="post" action="LoginServlet">

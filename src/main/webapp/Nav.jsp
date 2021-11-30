@@ -25,8 +25,6 @@
 </head>
 
 <body>
-<!--sidebar start-->
-<!--sidebar end-->
 
 <div  class="contLogOut"  >
     <span>Bienvenido ${sessionScope.usuario.nombreUsuario}</span>

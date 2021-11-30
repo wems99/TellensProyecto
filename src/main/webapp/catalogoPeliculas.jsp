@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estiloCat.css">
 
-
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Tellens Catálogo</title>
 </head>

@@ -23,7 +23,6 @@
 
 <body onload="getMovies();">
 
-
 <nav>
     <div id="nav-placeholder">
     </div>

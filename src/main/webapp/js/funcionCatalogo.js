@@ -13,8 +13,6 @@ function precio(){
     return val;
 }
 
-
-
 function selecPrecios(){
     var val = ($(".precios").val());
     switch (val) {
